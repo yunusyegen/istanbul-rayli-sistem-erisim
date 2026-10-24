@@ -118,6 +118,45 @@ Kullandığım arama ifadeleri:
 - "public transport accessibility equity"
 - "metro accessibility population"
 
+### Okuma listesi
+
+Aşağıdaki kaynakları buldum ve künyelerini yayıncı sayfasından doğruladım. Okudukça aşağıdaki
+karşılaştırma tablosuna işliyorum.
+
+1. Öztaşkın, D. ve Levend, S. (2023). Toplu Taşıma Duraklarının Erişilebilirliği: İstanbul Örneği.
+   *Türk Uzaktan Algılama ve CBS Dergisi*, 4(2), 301-318.
+   [doi:10.48123/rsgis.1299707](https://doi.org/10.48123/rsgis.1299707)
+   Projeme en yakın kaynak. İstanbul'da duraklara yürüme mesafesiyle erişimi ölçüyor.
+
+2. Gökçe, B. (2024). Büyüyen Raylı Toplu Taşıma Sistem Ağında Hatlar ve İstasyonlar: İstanbul
+   Örneği. *METU Journal of the Faculty of Architecture*, 41(1), 1-21.
+   [doi:10.4305/METU.JFA.2024.1.1](https://doi.org/10.4305/METU.JFA.2024.1.1)
+   İstanbul raylı sistem ağını istasyon düzeyinde inceliyor.
+
+3. Cihan, U. (2025). A Sustainable Accessibility Approach in Transportation Planning: The Case of
+   Istanbul. *Planlama Dergisi*, 35(3), 343-363.
+   [doi:10.14744/planlama.2025.90958](https://doi.org/10.14744/planlama.2025.90958)
+   İstanbul'da toplu taşımayla işe erişimi ve mekânsal eşitliği ölçüyor.
+
+4. Zhu, J. ve Rui, X. (2025). Spatiotemporal Dynamics and Multi-Scale Equity Evaluation of Urban
+   Rail Accessibility: Evidence from Hangzhou. *ISPRS International Journal of Geo-Information*,
+   14(9), 361. [doi:10.3390/ijgi14090361](https://doi.org/10.3390/ijgi14090361)
+   Raylı sistem erişiminin eşit dağılıp dağılmadığını Gini katsayısı ve Lorenz eğrisiyle ölçüyor.
+
+5. Li, D., Zang, H., Guan, Z. ve Yu, D. (2025). Study on Spatial Distribution and Inequity of Rail
+   Transit Travel Accessibility under Multi-modal Traveling: A Case Study of Beijing.
+   *Scientific Reports*, 15(1), 15823.
+   [doi:10.1038/s41598-025-97066-4](https://doi.org/10.1038/s41598-025-97066-4)
+   Pekin'de raylı sistem erişimini ilçe düzeyinde karşılaştırıyor.
+
+6. Alp, G. (2022). *İstanbul'da Raylı Sistem Yatırımlarının Kentin Gelişimi ve Arazi Kullanımı
+   Üzerindeki Etkileri: Arnavutköy İlçesi Örneği* (Yüksek lisans tezi). İstanbul Sabahattin Zaim
+   Üniversitesi.
+   [Açık erişim kaydı](https://openaccess.izu.edu.tr/entities/publication/4440f75d-8ca7-4ba2-bbe1-4f5e23334672)
+   Tek bir ilçe üzerinden raylı sistem yatırımının etkisini ele alıyor.
+
+### Karşılaştırma tablosu
+
 | Kaynak (yazar, yıl) | Problem | Veri | Yöntem | Temel bulgu | Sınırlılık | Projeme katkısı |
 |---|---|---|---|---|---|---|
 | | | | | | | |
