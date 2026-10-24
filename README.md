@@ -150,3 +150,26 @@ istanbul-rayli-sistem-erisim/
 | 2 | Git ve VS Code kuruldu, GitHub hesabı hazırlandı, problem cümlesi ve hipotezler yazıldı |
 | 3 | Veri kaynakları belirlendi, literatür taramasına başlandı |
 | 4 | GitHub deposu kuruldu, README yazıldı, Issue'lar ve Kanban panosu hazırlandı |
+
+## 14. Yapay zekâ kullanım beyanı
+
+Bu projede yapay zekâ aracı olarak Claude (Anthropic) kullanıldı. Hangi işte kullandığımı aşağıda
+yazıyorum.
+
+Kullandığım yerler:
+
+- README dosyasının bölümlerinin düzenlenmesi ve metnin gözden geçirilmesi
+- Analiz not defterindeki Python kodunun taslağının yazılması
+- İBB veri setinde aynı istasyonun birden çok adla geçtiğinin fark edilmesi ve bunu düzelten
+  temizleme kodunun yazılması
+
+Kullanmadığım yerler:
+
+- Literatür kaynakları. Kaynakların hepsini Google Akademik, DergiPark, TR Dizin ve YÖK Tez'de
+  kendim arayıp okuyorum. Yapay zekânın önerdiği hiçbir kaynağı, kendim bulup doğrulamadan
+  kullanmadım.
+- Veri toplama. İBB ve TÜİK dosyalarını portallardan kendim indirdim.
+- Bulguların yorumlanması. Sayıların ne anlama geldiğini kendi cümlelerimle yazıyorum.
+
+Analiz çıktılarını kendim kontrol ettim. Yapay zekâ bir kaynak olmadığı için kaynakçada yer almıyor
+ve metinde ona atıf yapılmadı.
