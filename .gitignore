@@ -1,0 +1,25 @@
+# Ham veri dosyaları depoya yüklenmiyor.
+# Nereden indirileceği veri/README.md içinde yazıyor.
+veri/ham/*
+!veri/ham/.gitkeep
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX ara dosyaları
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
