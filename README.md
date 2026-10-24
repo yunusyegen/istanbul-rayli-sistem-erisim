@@ -151,7 +151,36 @@ istanbul-rayli-sistem-erisim/
 | 3 | Veri kaynakları belirlendi, literatür taramasına başlandı |
 | 4 | GitHub deposu kuruldu, README yazıldı, Issue'lar ve Kanban panosu hazırlandı |
 
-## 14. Yapay zekâ kullanım beyanı
+## 14. Proje yönetimi
+
+İşleri GitHub Issue'larına böldüm. Her Issue'nun bir kabul kriteri listesi, bir konu etiketi
+(Veri, Analiz, Literatür, Doküman) ve bir öncelik etiketi (Must, Should, Could) var.
+
+İşleri Kanban panosunda takip ediyorum. Panonun sütunları: Backlog, To Do, In Progress,
+Review/Test, Done. In Progress sütununda aynı anda en fazla 2 kart tutuyorum (WIP limiti), çünkü
+aynı anda çok işe başlayınca hiçbiri bitmiyor.
+
+**Pano:** https://github.com/users/yunusyegen/projects/2
+
+### Sprint 1
+
+**Hedef:** 13 şüpheli istasyonun ilçesi kesinleşsin ve literatür tablosunda en az 5 okunmuş kaynak
+olsun.
+
+**Süre:** 1 hafta
+
+| Issue | İş | Öncelik |
+|---|---|---|
+| #6 | Birden fazla ilçeye kayıtlı 13 istasyonu haritadan kontrol et | Must |
+| #7 | En az 5 güvenilir kaynak bul, oku ve literatür tablosunu doldur | Must |
+| #8 | Kaynakları Zotero'ya ekle ve kaynaklar.bib dosyasını üret | Must |
+| #9 | Betimsel istatistikleri yorumla (alt problem 1 ve 2) | Must |
+
+**Bitti sayılma koşulu (Definition of Done):** İş depoya commit edildi, Issue'daki kabul
+kriterlerinin hepsi işaretlendi, not defteri baştan sona hatasız çalışıyor ve değişiklik README'ye
+yansıtıldı.
+
+## 15. Yapay zekâ kullanım beyanı
 
 Bu projede yapay zekâ aracı olarak Claude (Anthropic) kullanıldı. Hangi işte kullandığımı aşağıda
 yazıyorum.
