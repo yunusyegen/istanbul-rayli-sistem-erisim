@@ -1,0 +1,4 @@
+senaryo,istasyon,sıfır ilçe,Gini,Spearman r,Spearman p,Mann-Whitney p
+1. Şu anki analiz (hepsi dahil),304,10,0.52,0.267,0.101,0.161
+"2. Teleferik, füniküler, Tünel, nostaljik hariç",299,10,0.514,0.279,0.085,0.17
+3. Belirsiz 13 istasyon hiç sayılmazsa,292,10,0.517,0.272,0.093,0.144
