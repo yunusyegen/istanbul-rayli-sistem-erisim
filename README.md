@@ -86,8 +86,10 @@ dosyasında adım adım yazıyor.
 - **Analiz:**
   - Alt problem 1 ve 2: betimsel istatistik (ortalama, medyan, en büyük ve en küçük değer) ve
     sütun grafiği
-  - Alt problem 3 (H1): saçılım grafiği ve korelasyon katsayısı
-  - Alt problem 4 (H2): iki yakanın ortalama ve medyanlarının karşılaştırılması, kutu grafiği
+  - Alt problem 3 (H1): saçılım grafiği, Pearson ve Spearman korelasyon katsayısı
+  - Alt problem 4 (H2): iki yakanın ortalama ve medyanlarının karşılaştırılması, kutu grafiği ve
+    Mann-Whitney U testi. Bu test, grup sayıları küçük olduğunda ve veri normal dağılmadığında
+    kullanılıyor; burada birçok ilçede değer sıfır olduğu için veri normal dağılmıyor
 - **Araçlar:** Google Colab (Python), GitHub, Overleaf, Zotero
 
 **Yöntemin gerekçesi:** Araştırma sorusu iki sayısal değişken arasındaki ilişkiyi (nüfus ve istasyon
@@ -114,9 +116,9 @@ Okuduğum her kaynağı aşağıdaki tabloya ekliyorum.
 
 Kullandığım arama ifadeleri:
 - "raylı sistem erişilebilirlik İstanbul"
-- "toplu taşıma erişilebilirliği ilçe"
+- "toplu taşıma erişilebilirlik analizi İstanbul metro istasyon nüfus"
 - "public transport accessibility equity"
-- "metro accessibility population"
+- "metro station accessibility equity population district"
 
 ### Okuma listesi
 
@@ -133,8 +135,8 @@ karşılaştırma tablosuna işliyorum.
    [doi:10.4305/METU.JFA.2024.1.1](https://doi.org/10.4305/METU.JFA.2024.1.1)
    İstanbul raylı sistem ağını istasyon düzeyinde inceliyor.
 
-3. Cihan, U. (2025). A Sustainable Accessibility Approach in Transportation Planning: The Case of
-   Istanbul. *Planlama Dergisi*, 35(3), 343-363.
+3. Cihan, U. ve Üstündağ, K. İ. (2025). A Sustainable Accessibility Approach in Transportation
+   Planning: The Case of Istanbul. *Planlama Dergisi*, 35(3), 343-363.
    [doi:10.14744/planlama.2025.90958](https://doi.org/10.14744/planlama.2025.90958)
    İstanbul'da toplu taşımayla işe erişimi ve mekânsal eşitliği ölçüyor.
 
@@ -193,31 +195,70 @@ maliyetini ve yolculuk konforunu hesaba katmıyor. Öztaşkın ve Levend (2023) 
 çalışmalara bırakıyor. Yani "ilçede istasyon var" demek "o ilçede yaşayan herkes raylı sisteme
 erişebiliyor" demek değil. Benim ölçütüm de bunu ölçmüyor ve sınırlılıklar bölümünde bunu yazdım.
 
-## 11. Klasör yapısı
+## 11. İlk bulgular
+
+Aşağıdaki sayılar [`analiz/analiz.ipynb`](analiz/analiz.ipynb) not defterinin çıktısıdır. Tam tablo
+[`veri/islenmis/ilce_erisim.csv`](veri/islenmis/ilce_erisim.csv) dosyasında duruyor.
+
+**Uyarı:** Bunlar ön bulgu. Sınırlılıklar bölümünde yazdığım 13 istasyonun ilçesini haritadan
+kontrol edince birkaç ilçenin sayısı değişebilir.
+
+| | Değer |
+|---|---|
+| Analize giren istasyon sayısı | 304 |
+| Hiç istasyonu olmayan ilçe sayısı | 10 |
+| 100.000 kişiye düşen istasyon, ortalama | 2,07 |
+| 100.000 kişiye düşen istasyon, medyan | 1,67 |
+| En yüksek | Fatih, 12,22 |
+| En düşük | 10 ilçede 0,00 |
+
+Hiç istasyonu olmayan ilçeler: Adalar, Avcılar, Beykoz, Beylikdüzü, Büyükçekmece, Esenyurt,
+Silivri, Sultanbeyli, Şile ve Çatalca.
+
+![İlçelere göre raylı sistem erişimi](rapor/sekiller/sekil1_ilce_erisim.png)
+
+**Alt problem 3 (H1):** Nüfus ile istasyon sayısı arasında Spearman korelasyonu r = 0,285 ve
+p = 0,079 çıktı. p değeri 0,05'ten büyük olduğu için H0 reddedilemedi.
+
+**Alt problem 4 (H2):** Avrupa yakasının medyanı 2,02, Anadolu yakasının 0,87. Mann-Whitney U
+testinde U = 228,0 ve p = 0,121 çıktı. Fark anlamlı değil, H0 reddedilemedi.
+
+Bu iki sonucun ayrıntılı yorumu ve literatürle karşılaştırması #9, #10 ve #11 numaralı Issue'larda
+yapılacak.
+
+## 12. Klasör yapısı
 
 ```
 istanbul-rayli-sistem-erisim/
-├── README.md     proje özeti ve günlüğü
-├── veri/         veri kaynakları, indirme talimatı, işlenmiş tablolar
-├── analiz/       Google Colab not defteri
-├── rapor/        LaTeX rapor ve kaynakça
-└── sunum/        sunum dosyaları
+├── README.md               proje özeti, bulgular ve günlük
+├── veri/
+│   ├── README.md           veri kaynakları ve indirme talimatı
+│   ├── ilce_nufus.csv      39 ilçenin yakası ve TÜİK nüfusu
+│   ├── ham/                indirilen ham dosyalar (depoya yüklenmiyor)
+│   └── islenmis/           ilce_erisim.csv
+├── analiz/
+│   └── analiz.ipynb        Google Colab not defteri
+├── rapor/
+│   ├── kaynaklar.bib       BibTeX künyeleri
+│   ├── okuma_notlari.md    kaynak okuma kartları
+│   └── sekiller/           grafikler
+└── sunum/                  sunum dosyaları
 ```
 
-## 12. Hedef çıktı (MVP)
+## 13. Hedef çıktı (MVP)
 
 39 ilçe için 100.000 kişiye düşen istasyon sayısını gösteren bir tablo ve bir sütun grafiği.
 
-## 13. Proje günlüğü
+## 14. Proje günlüğü
 
 | Hafta | Yaptıklarım |
 |---|---|
 | 1 | Konu seçildi, ders planı ve değerlendirme ölçütleri incelendi |
 | 2 | Git ve VS Code kuruldu, GitHub hesabı hazırlandı, problem cümlesi ve hipotezler yazıldı |
-| 3 | Veri kaynakları belirlendi, literatür taramasına başlandı |
-| 4 | GitHub deposu kuruldu, README yazıldı, Issue'lar ve Kanban panosu hazırlandı |
+| 3 | Veri kaynakları belirlendi, İBB ve TÜİK dosyaları indirildi |
+| 4 | GitHub deposu kuruldu, README yazıldı, veri temizlendi ve ilk analiz yapıldı, 15 Issue ile Kanban panosu hazırlandı, 6 kaynak okunup literatür tablosu dolduruldu |
 
-## 14. Proje yönetimi
+## 15. Proje yönetimi
 
 İşleri GitHub Issue'larına böldüm. Her Issue'nun bir kabul kriteri listesi, bir konu etiketi
 (Veri, Analiz, Literatür, Doküman) ve bir öncelik etiketi (Must, Should, Could) var.
@@ -246,25 +287,29 @@ olsun.
 kriterlerinin hepsi işaretlendi, not defteri baştan sona hatasız çalışıyor ve değişiklik README'ye
 yansıtıldı.
 
-## 15. Yapay zekâ kullanım beyanı
+## 16. Yapay zekâ kullanım beyanı
 
-Bu projede yapay zekâ aracı olarak Claude (Anthropic) kullanıldı. Hangi işte kullandığımı aşağıda
-yazıyorum.
+Bu projede yapay zekâ aracı olarak Claude (Anthropic) kullandım. Dersin kuralı gereği hangi işte
+kullandığımı ayrıntılı yazıyorum.
 
-Kullandığım yerler:
+**Yapay zekâyı kullandığım yerler:**
 
-- README dosyasının bölümlerinin düzenlenmesi ve metnin gözden geçirilmesi
-- Analiz not defterindeki Python kodunun taslağının yazılması
+- README.md ve veri/README.md dosyalarının yazılması ve düzenlenmesi
+- Analiz not defterindeki Python kodunun yazılması
 - İBB veri setinde aynı istasyonun birden çok adla geçtiğinin fark edilmesi ve bunu düzelten
   temizleme kodunun yazılması
+- Literatür taramasında kaynak adaylarının aranması ve bulunan kaynakların künyelerinin Crossref
+  ile yayıncı sayfaları üzerinden doğrulanması
+- Okuduğum kaynakların karşılaştırma tablosuna ve okuma notlarına aktarılmasında taslak metin
 
-Kullanmadığım yerler:
+**Kendi yaptıklarım:**
 
-- Literatür kaynakları. Kaynakların hepsini Google Akademik, DergiPark, TR Dizin ve YÖK Tez'de
-  kendim arayıp okuyorum. Yapay zekânın önerdiği hiçbir kaynağı, kendim bulup doğrulamadan
-  kullanmadım.
-- Veri toplama. İBB ve TÜİK dosyalarını portallardan kendim indirdim.
-- Bulguların yorumlanması. Sayıların ne anlama geldiğini kendi cümlelerimle yazıyorum.
+- Konunun, problem cümlesinin, alt problemlerin, değişkenlerin ve hipotezlerin belirlenmesi
+- Veri setlerinin İBB ve TÜİK portallarından indirilmesi
+- Kaynakların tam metinlerinin okunması ve tablodaki bilgilerin kaynakla karşılaştırılarak
+  kontrol edilmesi
+- Analiz çıktılarının ve tablodaki sayıların kontrol edilmesi
+- Bulguların yorumlanması
 
-Analiz çıktılarını kendim kontrol ettim. Yapay zekâ bir kaynak olmadığı için kaynakçada yer almıyor
-ve metinde ona atıf yapılmadı.
+Yapay zekâ bir kaynak olmadığı için kaynakçada yer almıyor ve metinde ona atıf yapılmadı.
+Kaynakçadaki bütün künyeleri DOI veya yayıncı sayfası üzerinden ayrıca doğruladım.
