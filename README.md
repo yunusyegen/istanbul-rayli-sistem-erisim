@@ -244,10 +244,24 @@ Yazarın kendi ifadesiyle nüfusla paralel bir yolcu artışı yok. Aynı çalı
 da anlamlı bir fark yaratmıyor. Bu iki sonuç benim bulgularımla aynı yönde: ben de nüfus ile istasyon
 sayısı arasında anlamlı bir ilişki ve iki yaka arasında anlamlı bir fark bulamadım.
 
+Bir noktada literatürle çelişiyor gibi görünüyorum ve bunu açıkça yazmam gerekiyor. Öztaşkın ve
+Levend (2023) Avrupa yakasında oturanların raylı sisteme Anadolu yakasındakilerden daha iyi
+eriştiğini söylüyor. Benim H2 testim ise iki yaka arasında anlamlı fark bulmadı. Bu çelişki
+göründüğü kadar derin değil: benim verimde de Avrupa yakasının medyanı (2,05) Anadolu'nun
+(0,96) iki katından fazla, yani betimsel olarak aynı yöndeyim. Fark sadece istatistiksel olarak
+anlamlı çıkmadı ve 25'e 14 ilçeyle testin gücü zaten düşük. Ayrıca onlar erişimi yürüme
+mesafesiyle, ben istasyon sayısıyla ölçüyorum. Gökçe (2024) de regresyon modelinde Avrupa yakası
+değişkenini anlamsız buluyor, yani bu konuda literatür kendi içinde de tek ses değil.
+
 Yöntem açısından en çok Zhu ve Rui (2025) ile Li ve ark. (2025) işime yarıyor. İkisi de eşitsizliği
-Gini katsayısıyla tek bir sayıya indiriyor. Benim 100.000 kişiye düşen istasyon sayım 39 ilçeye
-yayılmış bir dağılım olduğu için aynı hesabı yapabilirim. Bunu projenin sonraki aşamasına
-ekleyeceğim.
+Gini katsayısıyla tek bir sayıya indiriyor. Bu ölçüyü kendi verime uyguladım ve Gini katsayısını
+0,520 buldum.
+
+**Dikkat:** Bu sayıyı Zhu ve Rui'nin Hangzhou için bulduğu 0,425 ile doğrudan karşılaştırmıyorum.
+İki çalışma farklı birim (onlar trafik analiz zonu, ben ilçe) ve farklı erişilebilirlik ölçüsü
+(onlar yürüme mesafesiyle ağırlıklı erişim endeksi, ben istasyon sayısı) kullanıyor. Farklı
+koşullarda hesaplanmış skorları eşdeğer saymak yaygın bir hata. Gini'yi buradan bir yöntem olarak
+aldım, kıyaslanacak bir hedef değer olarak değil.
 
 Kaynakların ortak bir sınırlılığı var ve bu benimkiyle örtüşüyor: hiçbiri sefer sıklığını, bilet
 maliyetini ve yolculuk konforunu hesaba katmıyor. Öztaşkın ve Levend (2023) bunu açıkça gelecek
