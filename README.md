@@ -157,14 +157,41 @@ karşılaştırma tablosuna işliyorum.
 
 ### Karşılaştırma tablosu
 
-| Kaynak (yazar, yıl) | Problem | Veri | Yöntem | Temel bulgu | Sınırlılık | Projeme katkısı |
+| Kaynak | Problem | Veri | Yöntem | Temel bulgu | Sınırlılık | Projeme katkısı |
 |---|---|---|---|---|---|---|
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
+| Öztaşkın ve Levend (2023) | İstanbul'da duraklara erişim yeterli mi? | İBB durak ve hat verisi, 2020 bina nüfus verisi | CBS, ArcGIS servis alanı analizi, 5/10/15 dk yürüme | Raylı sisteme 5 dk'da ulaşan nüfus %2,88. Avrupa yakası Anadolu'dan daha iyi | Sefer sıklığı, maliyet ve konfor ölçülmemiş | Yaka farkını benim gibi soruyor, erişimi farklı ölçüyor. Sefer sıklığı sınırlılığı benimkiyle aynı |
+| Gökçe (2024) | Ağa eklenen istasyonun yolcu sayısına katkısı neye bağlı? | 186 istasyon, 5 yıl (2013-2022), 745 gözlem, 1 km'deki nüfus ve işyeri | Rastgele etkiler panel veri regresyonu | Nüfus %1 artınca yolcu %0,10 artıyor, işyeri iki kat etkili. Avrupa yakası anlamsız (t=0,68) | Panel veride yıl bazlı eksikler model kalitesini etkiliyor | H1 ve H2 sonuçlarımı destekliyor. İstanbul dışı Marmaray istasyonlarını dışlaması benim temizliğimle aynı |
+| Cihan ve Üstündağ (2025) | Toplu taşımayla istihdama erişim adil mi? | 1307 TAZ, 2022 istihdam verisi, 2040 senaryosu, İUAP anketleri | Kümülatif olanaklar yöntemi, 30/60/90 dk eşik, CBS | 60 dk'da erişim %24,41'den %32,55'e çıkıyor. 30 dk'da en düşük değer hiç değişmiyor | Bütün olanaklar eşit ağırlıklı sayılıyor | Merkez ilçelerin (Fatih, Şişli, Beşiktaş, Kadıköy) yüksek çıkması benim tablomla aynı |
+| Zhu ve Rui (2025) | Metro ağı büyürken erişim eşit dağılıyor mu? | Hangzhou, 2019 ve 2023 metro ağı, yol ağı, nüfus dağılımı | Ağ tabanlı tampon azalma modeli, Gini katsayısı, Lorenz eğrisi, Moran's I | TAZ ölçeğinde Gini 0,56'dan 0,425'e düşmüş ama grid ölçeğinde 0,404'te kalmış | Ayrı sınırlılık bölümü yok. Tek şehir, iki yıl. Endeks merkezi alanları kayırıyor | Eşitsizliği tek sayıyla ölçmenin yolunu gösteriyor: Gini ve Lorenz. Sonraki aşamada ekleyeceğim |
+| Li ve ark. (2025) | İstasyon erişimi ile nüfus yoğunluğu uyuşuyor mu? | Pekin 6. Çevre Yolu içi, Gaode Map API, dört ulaşım türü, nüfus verisi | Gauss tabanlı 2SFCA, Gini katsayısı, IPA | Merkez ve alt merkezlerde erişim yüksek. Erişim en adaletsiz yürüyerek ve toplu taşımayla | Nüfus grupları (yaş, cinsiyet) ayrılmamış, trafik yoğunluğu ve banliyöler kapsam dışı | Erişimi alt bölge düzeyinde karşılaştırıyor. Merkez-çeper farkı benim bulgumla aynı yönde |
+| Alp (2022) | Raylı sistem yatırımı ilçeyi nasıl dönüştürür? | Arnavutköy planlama belgeleri, nüfus verileri, Halkalı-Havalimanı hattı proje bilgileri | Nitel durum incelemesi, belge analizi | Ulaşım yatırımı ile arazi kullanımı ve gayrimenkul değeri arasında güçlü bağ var | Tek ilçe, henüz açılmamış hat, sayısal ölçüm yok | Benim 39 ilçelik yüzeysel bakışımın tersi: tek ilçeye derinlemesine bakıyor, tamamlayıcı |
 
-Tablo doldukça buraya kısa bir özet paragrafı yazılacak. Kaynakların künyeleri
-[`rapor/kaynaklar.bib`](rapor/kaynaklar.bib) dosyasında BibTeX biçiminde tutuluyor.
+Her kaynağın daha ayrıntılı notu [`rapor/okuma_notlari.md`](rapor/okuma_notlari.md) dosyasında.
+Künyeler [`rapor/kaynaklar.bib`](rapor/kaynaklar.bib) dosyasında BibTeX biçiminde tutuluyor.
+
+### Literatürün özeti
+
+Okuduğum altı kaynak, raylı sistem erişiminin kent içinde eşit dağılmadığının hem İstanbul'da hem
+başka şehirlerde tekrar tekrar bulunan bir sonuç olduğunu gösteriyor. İstanbul'u inceleyen üç
+çalışmanın üçü de merkez ilçelerin çeper ilçelerden belirgin biçimde iyi durumda olduğunu buluyor.
+Cihan ve Üstündağ (2025) Fatih, Şişli, Beşiktaş ve Kadıköy'ü sürekli yüksek skorlu ilçeler olarak
+sayıyor; benim 100.000 kişiye düşen istasyon sıralamamda da bu ilçeler üst sıralarda çıktı.
+
+Nüfusla ilişki konusunda Gökçe'nin (2024) bulgusu benim açımdan en önemlisi. İstasyon çevresindeki
+nüfusun %1 artması yolcu sayısını yalnızca %0,10 artırıyor, işyeri sayısı ise iki kat etkili.
+Yazarın kendi ifadesiyle nüfusla paralel bir yolcu artışı yok. Aynı çalışmada Avrupa yakasında olmak
+da anlamlı bir fark yaratmıyor. Bu iki sonuç benim bulgularımla aynı yönde: ben de nüfus ile istasyon
+sayısı arasında anlamlı bir ilişki ve iki yaka arasında anlamlı bir fark bulamadım.
+
+Yöntem açısından en çok Zhu ve Rui (2025) ile Li ve ark. (2025) işime yarıyor. İkisi de eşitsizliği
+Gini katsayısıyla tek bir sayıya indiriyor. Benim 100.000 kişiye düşen istasyon sayım 39 ilçeye
+yayılmış bir dağılım olduğu için aynı hesabı yapabilirim. Bunu projenin sonraki aşamasına
+ekleyeceğim.
+
+Kaynakların ortak bir sınırlılığı var ve bu benimkiyle örtüşüyor: hiçbiri sefer sıklığını, bilet
+maliyetini ve yolculuk konforunu hesaba katmıyor. Öztaşkın ve Levend (2023) bunu açıkça gelecek
+çalışmalara bırakıyor. Yani "ilçede istasyon var" demek "o ilçede yaşayan herkes raylı sisteme
+erişebiliyor" demek değil. Benim ölçütüm de bunu ölçmüyor ve sınırlılıklar bölümünde bunu yazdım.
 
 ## 11. Klasör yapısı
 
