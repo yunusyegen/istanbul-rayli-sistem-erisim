@@ -164,7 +164,7 @@ yapılmıyor, bu yüzden katılımcı onamı ve etik kurul izni gerektiren bir d
   verildi (bkz. [`veri/README.md`](veri/README.md)).
 - **Depoda kişisel bilgi tutulmuyor.** Öğrenci numarası, telefon ve e-posta gibi bilgiler depoya
   konmuyor.
-- **Kaynaklar okunarak kullanılıyor** ve yapay zekâ kullanımı 17. bölümde beyan ediliyor.
+- **Kaynaklar okunarak kullanılıyor** ve yapay zekâ kullanımı 18. bölümde beyan ediliyor.
 - **Sınırlılıklar ve belirsizlikler gizlenmiyor.** Veri temizliğinde verdiğim kararlar ve bunların
   sonuca etkisi duyarlılık analiziyle açıkça gösteriliyor.
 
@@ -360,15 +360,33 @@ istanbul-rayli-sistem-erisim/
 │   ├── kaynaklar.bib       BibTeX künyeleri
 │   ├── okuma_notlari.md    kaynak okuma kartları
 │   └── sekiller/           4 grafik (sütun, saçılım, kutu, Lorenz)
+├── uml/                    UML diyagramları (.mmd kaynak + .png)
 └── sunum/                  sunum dosyaları
 ```
 
-## 14. Hedef çıktı (MVP)
+## 14. UML diyagramları
+
+Sistemin yapısını ve işleyişini kodlamaya geçmeden önce modelledim. Üç diyagram
+[`uml/`](uml/) klasöründe, ayrıntılı açıklamalarıyla birlikte: [`uml/README.md`](uml/README.md).
+
+| Diyagram | Ne gösteriyor |
+|---|---|
+| [Use Case](uml/1_use_case.png) | Sistemi kimin kullandığı ve hangi işlemleri yaptığı. Aktörler: araştırmacı, analizi yeniden çalıştıran başka bir araştırmacı, veri sağlayıcı olarak İBB ve TÜİK |
+| [Activity](uml/2_activity.png) | Ham veriden ilçe erişim tablosuna giden süreç. Dört karar noktası ve iki farklı bitiş (normal ve hata) içeriyor |
+| [Class](uml/3_class.png) | Not defterindeki fonksiyonları sınıflara taşıyan tasarım önerisi. Kalıtım, bileşim, birleşim ve bağımlılık ilişkilerini gösteriyor |
+
+Diyagramların kaynağı Mermaid biçiminde tutuluyor, bu yüzden metin olarak sürümlenebiliyor ve
+GitHub'da doğrudan görüntüleniyor. PNG çıktıları rapora eklemek için üretildi.
+
+Sınıf diyagramı için bir not: analiz not defteri şu an fonksiyonel yazılmış, içinde sınıf yok.
+O diyagram kodu sınıflara taşıdığımda nasıl olacağını gösteren bir tasarım önerisi.
+
+## 15. Hedef çıktı (MVP)
 
 39 ilçe için 100.000 kişiye düşen istasyon sayısını gösteren bir tablo ve bir sütun grafiği.
 Bu çıktı tamamlandı (bkz. 12. İlk bulgular).
 
-## 15. Proje günlüğü
+## 16. Proje günlüğü
 
 | Hafta | Yaptıklarım |
 |---|---|
@@ -376,8 +394,9 @@ Bu çıktı tamamlandı (bkz. 12. İlk bulgular).
 | 2 | Git ve VS Code kuruldu, GitHub hesabı hazırlandı, problem cümlesi ve hipotezler yazıldı |
 | 3 | Veri kaynakları belirlendi, İBB ve TÜİK dosyaları indirildi |
 | 4 | GitHub deposu kuruldu, README yazıldı, veri temizlendi ve ilk analiz yapıldı, 15 Issue ile Kanban panosu hazırlandı, 6 kaynak okunup literatür tablosu dolduruldu, Gini katsayısı ve duyarlılık analizi eklendi |
+| 5 | Use Case, Activity ve Class diyagramları hazırlandı ve depoya eklendi |
 
-## 16. Proje yönetimi
+## 17. Proje yönetimi
 
 İşleri GitHub Issue'larına böldüm. Her Issue'nun bir kabul kriteri listesi, bir konu etiketi
 (Veri, Analiz, Literatür, Doküman) ve bir öncelik etiketi (Must, Should, Could) var.
@@ -406,7 +425,7 @@ olsun.
 kriterlerinin hepsi işaretlendi, not defteri baştan sona hatasız çalışıyor ve değişiklik README'ye
 yansıtıldı.
 
-## 17. Yapay zekâ kullanım beyanı
+## 18. Yapay zekâ kullanım beyanı
 
 Bu projede yapay zekâ aracı olarak Claude (Anthropic) kullandım. Dersin kuralı gereği hangi işte
 kullandığımı ayrıntılı yazıyorum.

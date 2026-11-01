@@ -1,0 +1,88 @@
+%% Class Diyagramı
+%% Not defterindeki fonksiyonların sınıflara taşındığı tasarım önerisi
+classDiagram
+    class VeriKaynagi {
+        <<abstract>>
+        +String dosyaYolu
+        +int yil
+        +String lisans
+        +String indirmeTarihi
+        +oku() DataFrame
+        +dogrula() bool
+    }
+
+    class IBBIstasyonVerisi {
+        +String ayrac
+        +int satirSayisi
+        +oku() DataFrame
+        +sutunBul(adaylar) String
+    }
+
+    class TUIKNufusVerisi {
+        +int toplamNufus
+        +oku() DataFrame
+        +toplamiKontrolEt() bool
+    }
+
+    class Istasyon {
+        +String ad
+        +String temizAd
+        +String hat
+        +String kayitliIlce
+        +adiNormallestir() String
+    }
+
+    class IstasyonTemizleyici {
+        -Map elleDuzeltme
+        -List belirsizIstasyonlar
+        +bosSatirlariAt() int
+        +adlariBirlestir() int
+        +ilceAta() void
+        +istanbulDisiniAyikla() List
+        +temizlikRaporu() String
+    }
+
+    class Ilce {
+        +String ad
+        +String yaka
+        +int nufus
+        +int istasyonSayisi
+        +yuzBinKisiyeDusen() float
+    }
+
+    class ErisimTablosu {
+        +List~Ilce~ ilceler
+        +olustur() void
+        +siralaAzalan() List~Ilce~
+        +sifirIstasyonluIlceler() List~Ilce~
+        +csvYaz(yol) void
+    }
+
+    class AnalizMotoru {
+        +betimselIstatistik() DataFrame
+        +giniKatsayisi() float
+        +lorenzNoktalari() Tuple
+        +degisimKatsayisi() float
+        +korelasyon() Tuple
+        +mannWhitneyU() Tuple
+        +duyarlilikAnalizi() DataFrame
+    }
+
+    class GrafikUretici {
+        +String ciktiKlasoru
+        +sutunGrafigi(tablo) void
+        +sacilimGrafigi(tablo) void
+        +kutuGrafigi(tablo) void
+        +lorenzEgrisi(gini) void
+    }
+
+    VeriKaynagi <|-- IBBIstasyonVerisi : kalıtım
+    VeriKaynagi <|-- TUIKNufusVerisi : kalıtım
+    IBBIstasyonVerisi ..> IstasyonTemizleyici : besler
+    IstasyonTemizleyici "1" --> "*" Istasyon : temizler
+    Ilce "1" o-- "*" Istasyon : barındırır
+    TUIKNufusVerisi ..> Ilce : nüfusu sağlar
+    ErisimTablosu "1" *-- "39" Ilce : içerir
+    AnalizMotoru ..> ErisimTablosu : kullanır
+    GrafikUretici ..> ErisimTablosu : kullanır
+    AnalizMotoru ..> GrafikUretici : çizdirir

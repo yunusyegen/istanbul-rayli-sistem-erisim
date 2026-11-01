@@ -1,0 +1,59 @@
+%% Use Case Diyagramı
+%% İstanbul'da İlçelerin Raylı Sistem Erişimi
+flowchart TB
+    A1(["Araştırmacı"])
+    A2(["Başka bir<br/>araştırmacı"])
+
+    subgraph SIS["Raylı Sistem Erişim Analizi — sistem sınırı"]
+        direction TB
+        UC1("Ham veriyi indir")
+        UC2("Nüfus tablosunu hazırla")
+        UC3("Veriyi temizle")
+        UC4("İstasyonları ilçelere göre say")
+        UC5("Analiz yap")
+        UC6("Grafikleri üret")
+        UC7("Sonuçları dışa aktar")
+        UC8("Analizi yeniden çalıştır")
+
+        UC3a("İstasyon adlarını birleştir")
+        UC3b("İstanbul dışı istasyonları ayıkla")
+        UC3c("Belirsiz ilçeyi elle düzelt")
+
+        UC5a("Betimsel istatistik üret")
+        UC5b("Orantılılığı ölç: Gini ve Lorenz")
+        UC5c("Hipotezleri sına: H1 ve H2")
+        UC5d("Duyarlılık analizi yap")
+    end
+
+    S1["İBB Açık Veri Portalı"]
+    S2["TÜİK ADNKS"]
+
+    A1 --- UC1
+    A1 --- UC2
+    A1 --- UC3
+    A1 --- UC4
+    A1 --- UC5
+    A1 --- UC6
+    A1 --- UC7
+    A2 --- UC8
+    A2 --- UC7
+
+    UC1 --- S1
+    UC2 --- S2
+
+    UC3 -. include .-> UC3a
+    UC3 -. include .-> UC3b
+    UC3c -. extend .-> UC3
+
+    UC5 -. include .-> UC5a
+    UC5 -. include .-> UC5b
+    UC5 -. include .-> UC5c
+    UC5d -. extend .-> UC5c
+
+    classDef aktor fill:#ffffff,stroke:#222,stroke-width:2px
+    classDef dis fill:#f0f0f0,stroke:#777,stroke-dasharray:5 4
+    classDef uc fill:#ffffff,stroke:#333
+    class A1,A2 aktor
+    class S1,S2 dis
+    class UC1,UC2,UC3,UC4,UC5,UC6,UC7,UC8,UC3a,UC3b,UC3c,UC5a,UC5b,UC5c,UC5d uc
+    style SIS fill:#fafafa,stroke:#444,stroke-width:2px

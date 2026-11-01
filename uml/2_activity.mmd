@@ -1,0 +1,36 @@
+%% Activity Diyagramı
+%% Temel iş süreci: ham veriden ilçe erişim tablosuna
+flowchart TB
+    BAS((Başla)) --> A["Dosyayı oku, sütunları bul,<br/>adı veya ilçesi boş satırları at"]
+    A --> C["İstasyon adını normalleştir:<br/>büyük harf, -1 / -2 ve HOL n ekini sil"]
+    C --> D{"Aynı istasyon birden fazla<br/>ilçeye mi kayıtlı?"}
+    D -- Evet --> E{"Bu istasyon için elle<br/>düzeltme tanımlı mı?"}
+    E -- Evet --> E1["Tanımlı ilçeyi ata"]
+    E -- Hayır --> E2["En çok geçtiği ilçeyi ata,<br/>kontrol listesine ekle"]
+    D -- Hayır --> G["İstasyonu kayıtlı<br/>olduğu ilçeye ata"]
+    E1 --> H
+    E2 --> H
+    G --> H{"İlçe İstanbul'un 39<br/>ilçesinden biri mi?"}
+    H -- Hayır --> H1["Analiz dışı bırak:<br/>Gebze, Darıca, Çayırova"]
+    H -- Evet --> I["İlçeye göre farklı istasyonları say,<br/>TÜİK nüfusuyla birleştir"]
+    H1 --> I
+    I --> J{"Nüfusu girilmemiş<br/>ilçe var mı?"}
+    J -- Evet --> JH["Hata ver ve dur"] --> SONH((Hata ile<br/>bitir))
+    J -- Hayır --> K["100.000 kişiye düşen istasyon sayısını hesapla"]
+    K --> L1["Betimsel<br/>istatistik"]
+    K --> L2["Gini katsayısı<br/>ve Lorenz eğrisi"]
+    K --> L3["H1: Pearson ve<br/>Spearman"]
+    K --> L4["H2: Mann-<br/>Whitney U"]
+    L1 --> M["Duyarlılık analizi: 3 senaryoyu karşılaştır"]
+    L2 --> M
+    L3 --> M
+    L4 --> M
+    M --> N["Tabloları ve 4 şekli kaydet"]
+    N --> SON(((Bitir)))
+
+    classDef karar fill:#fff3cd,stroke:#856404,stroke-width:1.5px
+    classDef bitis fill:#d4edda,stroke:#155724,stroke-width:2px
+    classDef hata fill:#f8d7da,stroke:#721c24
+    class D,E,H,J karar
+    class BAS,SON bitis
+    class JH,SONH hata
