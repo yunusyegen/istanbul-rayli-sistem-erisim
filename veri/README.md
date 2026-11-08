@@ -45,9 +45,12 @@ Bu projede yolcu sayısı değil, istasyonun kendisi kullanılıyor: adı, hatt�
 ilçe ve koordinatı. Dosyada kişiye ait bilgi yok: kayıtlar istasyon ve gün bazında toplulaştırılmış
 sayılar ile istasyon konumlarından oluşuyor. Ad, kimlik, adres gibi bir alan bulunmuyor.
 
-**Yedek özet tablo.** Not defterini Colab'da ilk denediğimde İBB sunucusuna bağlanılamadı (bu makineden
-aynı adres bir saniyede açılıyor). Hoca da defteri Colab'dan çalıştıracağı için tek bir sunucuya bağımlı
-kalmamak istedim. `istasyon_ozet.csv`, İBB dosyasındaki altı sütunu (`station_name`, `town`, `line`,
+**Yedek özet tablo.** Not defterini Colab'da denediğimde İBB sunucusu dört denemede de zaman aşımına
+uğradı (`URLError: <urlopen error timed out>`), oysa bilgisayarımdan aynı adres bir saniyede açılıyor.
+Nedenini bilmiyorum: bazı kurumsal sunucular yurt dışındaki bulut ortamlarından gelen bağlantıları
+kabul etmiyor olabilir, ama bunu doğrulayamadım. Hoca da defteri Colab'dan çalıştıracağı için tek bir
+sunucuya bağımlı kalmamak istedim. Yedek yol Colab'da gerçekten çalıştı: İBB zaman aşımına uğradıktan
+sonra defter özet tabloyu indirip devam etti. `istasyon_ozet.csv`, İBB dosyasındaki altı sütunu (`station_name`, `town`, `line`,
 `station_number`, `longitude`, `latitude`) ve her değer kombinasyonunun kaç satırda geçtiğini (`satir_sayisi`)
 içeriyor. Yolcu sayıları ve tarihler yok, bu yüzden kişiye ait bilgi de yok. Not defteri bu tabloyu çoğaltıp
 ham tabloyu geri kuruyor ve sonuçların aynı çıktığını iki yolla doğruladım: tablonun geri kurulmuş hâli ham

@@ -199,7 +199,7 @@ Altı karar var ve hepsi veriyle çalışırken karşılaştığım gerçek soru
 
 1. **İndirme başarılı mı?** Not defteri üç veri dosyasını kaynağından kendisi indiriyor. Sunucu yanıt
    vermezse ya da yarım dosya gönderirse (İBB sunucusu bir denememde 14 MB'ın 10,8 MB'ında bağlantıyı
-   kesti, Colab'daki ilk denememde ise hiç bağlanılamadı) İBB dosyası yerine depodaki yedek özet tablo
+   kesti, Colab'daki denememde dört denemede de zaman aşımı oldu) İBB dosyası yerine depodaki yedek özet tablo
    kullanılıyor, o da olmazsa dosya elle yükleniyor.
 2. **İstasyonun koordinatı var mı?** 322 istasyondan 56'sının koordinatı yok ya da kullanılamıyor
    (Excel'de bozulmuş). Onlarda İBB'nin yazdığı ilçe kullanılıyor.
