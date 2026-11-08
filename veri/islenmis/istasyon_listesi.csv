@@ -1,0 +1,323 @@
+istasyon,ilce,ilce_ibb,karar,sinira_uzaklik_m,kod_sayisi,kodlar,hatlar
+ARNAVUTKÖY GUNEY,Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,AKY-GH1,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+ARNAVUTKÖY KUZEY,Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,AKY-GH2,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+HAVALİMANI (KARGO TERMİNALİ ),Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,HL3-HL3,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+HAVALİMANI (TERMİNAL 1),Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,HL1-HL1,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+TAŞOLUK GUNEY,Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,TAS-GH1,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+TAŞOLUK KUZEY,Arnavutköy,Arnavutköy,İBB = koordinat,0.0,1,TAS-GH2,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+KAYIŞDAĞI,Ataşehir,Ataşehir,İBB = koordinat,0.0,1,KDG-KDG,M8 DUDULLU - BOSTANCI
+KOZYATAĞI,Ataşehir,Ataşehir / Kadıköy,İBB = koordinat,0.0,2,"KYT-KYT, KYT-KZY",M4-KADIKOY-TAVSANTEPE | M8 DUDULLU - BOSTANCI
+KÜÇÜKBAKKALKÖY,Ataşehir,Ataşehir,İBB = koordinat,0.0,1,KBK-KBK,M8 DUDULLU - BOSTANCI
+MEVLANA,Ataşehir,Maltepe,koordinat,1409.0,1,MVL-MVL,M8 DUDULLU - BOSTANCI
+İÇERENKÖY,Ataşehir,Ataşehir,İBB = koordinat,0.0,1,ICK-ICK,M8 DUDULLU - BOSTANCI
+29 EKİM CUMHURİYET-İHLAS YUVA,Bahçelievler,Bahçelievler,İBB = koordinat,0.0,1,IHY-IHY,M9 ATAKOY-IKITELLI METRO
+BAHÇELİEVLER,Bahçelievler,Bahçelievler,İBB = koordinat,0.0,1,BAH-BAH,M1-YENIKAPI-HAVALIMANI
+DOĞU SANAYİ,Bahçelievler,Bahçelievler,İBB = koordinat,0.0,1,DSA-DSA,M9 ATAKOY-IKITELLI METRO
+HAZNEDAR,Bahçelievler,Bağcılar,koordinat,1706.0,1,HAZ-HAZ,M3-BASAKSEHIR-OLIMPIYATKOY
+ÇOBANÇEŞME,Bahçelievler,Bahçelievler,İBB = koordinat,0.0,1,CBN-CBN,M9 ATAKOY-IKITELLI METRO
+İLKYUVA,Bahçelievler,Bağcılar,koordinat,733.0,1,IKY-IKY,M3-BASAKSEHIR-OLIMPIYATKOY
+ATAKÖY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,ATY-MR1,TCDD TASIMACILIK A.S.
+ATAKÖY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,SRE-ATK,M1-YENIKAPI-HAVALIMANI
+ATAKÖY,Bakırköy,Bakırköy,İBB (koordinat yok),,1,ATY-ATA,M9 ATAKOY-IKITELLI METRO
+BAHÇEŞEHİR,Bakırköy,Bakırköy,İBB (koordinat yok),,1,BHS-BHS,TCDD - HALKALI-BASAKSEHIR
+BAKIRKÖY,Bakırköy,Bakırköy,İBB = koordinat,0.0,2,"BAK-MR1, BAK-MR2",TCDD TASIMACILIK A.S.
+BAKIRKÖY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,BKK-BKK,M1-YENIKAPI-HAVALIMANI
+BAKIRKÖY İDO,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,BDO-BDO,M3-BASAKSEHIR-OLIMPIYATKOY
+FLORYA,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,FLO-MR1,TCDD TASIMACILIK A.S.
+FLORYA AQUA,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,FLA-MR1,TCDD TASIMACILIK A.S.
+HAVAALANI,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,THY-THY,M1-YENIKAPI-HAVALIMANI
+YENİBOSNA,Bakırköy,Bakırköy,İBB = koordinat,0.0,2,"YBS-YBS, YBS-YNB",M1-YENIKAPI-HAVALIMANI | M9 ATAKOY-IKITELLI METRO
+YENİMAHALLE,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,YEN-MR1,TCDD TASIMACILIK A.S.
+YEŞİLKÖY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,YED-MR1,TCDD TASIMACILIK A.S.
+YEŞİLYURT,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,YEY-MR1,TCDD TASIMACILIK A.S.
+ZEYTİNBURNU,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,ZEY-ZEY,M1-YENIKAPI-HAVALIMANI
+ZEYTİNBURNU 2,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,ZEY-KBT,T1-KABATAS-BAGCILAR
+ÖZGÜRLÜK MEYDAN KUZEY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,OZM-OZK,M3-BASAKSEHIR-OLIMPIYATKOY
+ÖZGÜRLÜK MEYDANI GÜNEY,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,OZM-OZG,M3-BASAKSEHIR-OLIMPIYATKOY
+İDTM,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,DTM-DTM,M1-YENIKAPI-HAVALIMANI
+İNCİRLİ,Bakırköy,Bakırköy,İBB = koordinat,0.0,1,BKK-INC,M3-BASAKSEHIR-OLIMPIYATKOY
+KARTALTEPE,Bayrampaşa,Bayrampaşa,İBB = koordinat,0.0,1,KRP-KRP,M1-YENIKAPI-HAVALIMANI
+OTOGAR,Bayrampaşa,Bayrampaşa,İBB = koordinat,0.0,1,OGA-AKS,M1-YENIKAPI-HAVALIMANI
+OTOGAR 1,Bayrampaşa,Bayrampaşa,İBB = koordinat,0.0,1,OGA-ESN,M1-YENIKAPI-HAVALIMANI
+SAĞMALCILAR,Bayrampaşa,Bayrampaşa,İBB = koordinat,0.0,1,SAG-SAG,M1-YENIKAPI-HAVALIMANI
+TAŞKÖPRÜ,Bayrampaşa,Bayrampaşa,İBB korundu (sınır boyu),11.0,1,TSH-TSH,T4-TOPKAPI-MESCID-I SELAM
+ÇUKURÇEŞME,Bayrampaşa,Bayrampaşa,İBB korundu (sınır boyu),4.0,1,CKR-CKR,T4-TOPKAPI-MESCID-I SELAM
+15.TEM,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,OBT-OBT,M9 ATAKOY-IKITELLI METRO
+BAĞCILAR,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,BGC-KBT,T1-KABATAS-BAGCILAR
+BAĞCILAR MEYDAN,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,BGM-BGM,M1-YENIKAPI-HAVALIMANI
+GÖZTEPE BATI,Bağcılar,Bağcılar,İBB (koordinat yok),,1,GTE-GT1,M7-KABATAS-MAHMUTBEY
+GÖZTEPE DOĞU,Bağcılar,Bağcılar,İBB (koordinat yok),,1,GTE-GT2,M7-KABATAS-MAHMUTBEY
+HALKALI GÜNEY,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,HLL-HL1,M9 ATAKOY-IKITELLI METRO
+KİRAZLI,Bağcılar,Bağcılar,İBB = koordinat,0.0,2,"KRZ-KRZ, KRZ-KZL",M1-YENIKAPI-HAVALIMANI | M3-BASAKSEHIR-OLIMPIYATKOY
+MAHMUTBEY,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,MHY-MHY,M3-BASAKSEHIR-OLIMPIYATKOY
+MAHMUTBEY M3,Bağcılar,Bağcılar,İBB (koordinat yok),,2,"MHY-MH3, MHY-MH4",M7-KABATAS-MAHMUTBEY
+MAHMUTBEY M7,Bağcılar,Güngören,koordinat,3705.0,6,"MHY-MH1, MHY-MH2, MHY-MT1, MHY-MT2, MHY-MT3, MHY-MT4",M3-BASAKSEHIR-OLIMPIYATKOY | M7-KABATAS-MAHMUTBEY
+MOLLA GÜRANİ,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,MLG-MLG,M3-BASAKSEHIR-OLIMPIYATKOY
+MİMAR SİNAN,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,MMS-MM1,M9 ATAKOY-IKITELLI METRO
+YENİ MAHALLE,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,YML-YML,M3-BASAKSEHIR-OLIMPIYATKOY
+YILDIZTEPE,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,YDT-YDT,M3-BASAKSEHIR-OLIMPIYATKOY
+ÜÇYÜZLÜ,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,UYL-UYL,M1-YENIKAPI-HAVALIMANI
+İSTOÇ,Bağcılar,Bağcılar,İBB = koordinat,0.0,1,ITC-ITC,M3-BASAKSEHIR-OLIMPIYATKOY
+BAŞAK KONUTLARI,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,BSK-BSK,M3-BASAKSEHIR-OLIMPIYATKOY
+ISPARTAKULE,Başakşehir,Bakırköy,koordinat,10486.0,1,ISP-ISP,TCDD - HALKALI-BASAKSEHIR
+KAYAŞEHİR MERKEZ,Başakşehir,Bağcılar,koordinat,6632.0,1,KYS-KYS,M3-BASAKSEHIR-OLIMPIYATKOY
+METROKENT,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,MTK-MTK,M3-BASAKSEHIR-OLIMPIYATKOY
+OLİMPİYAT BATI,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,OLP-OL1,M9 ATAKOY-IKITELLI METRO
+OLİMPİYAT DOĞU,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,OLP-OL2,M9 ATAKOY-IKITELLI METRO
+ONURKENT,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,ONR-ONR,M3-BASAKSEHIR-OLIMPIYATKOY
+SİTELER,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,STR-STR,M3-BASAKSEHIR-OLIMPIYATKOY
+TOPLU KONUTLAR,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,TOK-TOK,M3-BASAKSEHIR-OLIMPIYATKOY
+TURGUT ÖZAL,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,TOL-TOL,M3-BASAKSEHIR-OLIMPIYATKOY
+ZİYA GÖKALP MAH,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,ZGP-ZGP,M9 ATAKOY-IKITELLI METRO
+İKİTELLİ SANAYİ,Başakşehir,Başakşehir / Küçükçekmece,İBB = koordinat,0.0,2,"IKT-IKT, IKT-IM9",M3-BASAKSEHIR-OLIMPIYATKOY | M9 ATAKOY-IKITELLI METRO
+ŞEHİR HASTANESİ,Başakşehir,Başakşehir,İBB = koordinat,0.0,1,SHR-SHR,M3-BASAKSEHIR-OLIMPIYATKOY
+BEYOĞLU,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,TBO-TBO,IETT TUNEL
+FINDIKLI,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,FDL-KBT,T1-KABATAS-BAGCILAR
+HALİÇ GÜNEY,Beyoğlu,Fatih,koordinat,239.0,1,HLC-HL1,M2-YENIKAPI-HACIOSMAN
+HALİÇ KUZEY,Beyoğlu,Fatih,koordinat,239.0,1,HLC-HL2,M2-YENIKAPI-HACIOSMAN
+IETT NOSTALJIK TRAMVAY (ADSIZ İSTASYON),Beyoğlu,Beyoğlu,İBB (koordinat yok),,1,KODSUZ-IETT NOSTALJIK TRAMVAY,IETT NOSTALJIK TRAMVAY
+KABATAŞ,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,2,"KTS-KTA, KTS-TKS",F1-TAKSIM-KABATAS FUNIKILER HATTI | T1-KABATAS-BAGCILAR
+KABATAŞ 2,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,KTS-KTT,T1-KABATAS-BAGCILAR
+KARAKÖY,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,2,"KAR-KBT, KAR-TKK",IETT TUNEL | T1-KABATAS-BAGCILAR
+TAKSİM,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,TAK-KBT,F1-TAKSIM-KABATAS FUNIKILER HATTI
+TAKSİM GÜNEY,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,TAK-TAK,M2-YENIKAPI-HACIOSMAN
+TOPHANE,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,TPH-KBT,T1-KABATAS-BAGCILAR
+ŞİŞHANE GÜNEY,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,SSH-SSH,M2-YENIKAPI-HACIOSMAN
+ŞİŞHANE KUZEY,Beyoğlu,Beyoğlu,İBB = koordinat,0.0,1,S1H-S1H,M2-YENIKAPI-HACIOSMAN
+AŞİYAN,Beşiktaş,Beşiktaş,İBB (koordinat yok),,1,ASN-ASN,F4 RUMELI HISARUSTU -ASIYAN
+ETİLER,Beşiktaş,Beşiktaş,İBB = koordinat,0.0,1,ETL-ETL,M6-LEVENT - RUMELI HISARUSTU
+M7 FULYA,Beşiktaş,Beşiktaş,İBB = koordinat,0.0,1,FUL-FUL,M7-KABATAS-MAHMUTBEY
+M7 YILDIZ 1,Beşiktaş,Beşiktaş,İBB = koordinat,0.0,1,YLZ-YL1,M7-KABATAS-MAHMUTBEY
+M7 YILDIZ 2,Beşiktaş,Beşiktaş,İBB = koordinat,0.0,1,YLZ-YL2,M7-KABATAS-MAHMUTBEY
+NİSPETİYE,Beşiktaş,Beşiktaş,İBB = koordinat,0.0,1,NSP-NSP,M6-LEVENT - RUMELI HISARUSTU
+BAŞTABYA,Esenler,Esenler,İBB korundu (sınır boyu),9.0,1,BTB-BTB,T4-TOPKAPI-MESCID-I SELAM
+CUMHURİYET,Esenler,Esenler,İBB korundu (sınır boyu),3.0,1,CMH-CMH,T4-TOPKAPI-MESCID-I SELAM
+ESENLER,Esenler,Esenler,İBB = koordinat,0.0,1,ESE-ESE,M1-YENIKAPI-HAVALIMANI
+KAZIMKARABEKİR,Esenler,Esenler,İBB (koordinat yok),,1,KKB-KKB,M7-KABATAS-MAHMUTBEY
+MENDERES,Esenler,Esenler,İBB = koordinat,0.0,1,MDR-MDR,M1-YENIKAPI-HAVALIMANI
+ORUÇREİS BATI,Esenler,Esenler,İBB (koordinat yok),,1,OCR-OC1,M7-KABATAS-MAHMUTBEY
+ORUÇREİS DOĞU,Esenler,Esenler,İBB (koordinat yok),,1,OCR-OC2,M7-KABATAS-MAHMUTBEY
+TEKSTİLKENT,Esenler,Esenler,İBB (koordinat yok),,1,TTK-TTK,M7-KABATAS-MAHMUTBEY
+TERAZİDERE,Esenler,Esenler,İBB = koordinat,0.0,1,TER-TER,M1-YENIKAPI-HAVALIMANI
+ALİBEYKÖY BATI,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,ALK-AL1,M7-KABATAS-MAHMUTBEY
+ALİBEYKÖY DOĞU,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,ALK-AL2,M7-KABATAS-MAHMUTBEY
+ALİBEYKÖY METRO,Eyüpsultan,Fatih,koordinat,4124.0,1,ALK-ALM,T5 EMINONU-ALIBEYKOY
+BAYRAMPAŞA,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,BAY-BAY,M1-YENIKAPI-HAVALIMANI
+DEMİRKAPI,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,DMR-DMR,T4-TOPKAPI-MESCID-I SELAM
+EDİRNEKAPI,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,EDK-EDK,T4-TOPKAPI-MESCID-I SELAM
+EYÜP,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,EYU-PLT,TF2-TELEFERIK EYUP PIYERLOTI
+GÖKTÜRK,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,GOK-GOK,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+HASDAL,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,HSD-HSD,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+KEMERBURGAZ,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,KMR-KMR,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+PİERLOTİ,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,PLT-EYU,TF2-TELEFERIK EYUP PIYERLOTI
+RAMİ,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,RMI-RMI,T4-TOPKAPI-MESCID-I SELAM
+TOPÇULAR,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,TPC-TPC,T4-TOPKAPI-MESCID-I SELAM
+VATAN,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,VAT-HBL,T4-TOPKAPI-MESCID-I SELAM
+VEYSELKARANİ BATI,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,VSK-VS1,M7-KABATAS-MAHMUTBEY
+VEYSELKARANİ DOĞU,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,VSK-VS2,M7-KABATAS-MAHMUTBEY
+YEŞİLPINAR,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,YSP-YSP,M7-KABATAS-MAHMUTBEY
+ÇIRÇIR BATI,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,CRC-CR1,M7-KABATAS-MAHMUTBEY
+ÇIRÇIR DOĞU,Eyüpsultan,Eyüpsultan,İBB (koordinat yok),,1,CRC-CR2,M7-KABATAS-MAHMUTBEY
+İHSANİYE,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,IHS-IHS,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+ŞEHİTLİK,Eyüpsultan,Eyüpsultan,İBB = koordinat,0.0,1,SHT-SHT,T4-TOPKAPI-MESCID-I SELAM
+AKSARAY,Fatih,Fatih,İBB = koordinat,0.0,2,"AKE-AKS, AKR-KBT",M1-YENIKAPI-HAVALIMANI | T1-KABATAS-BAGCILAR
+AKSARAY 1,Fatih,Fatih,İBB = koordinat,0.0,1,AKE-EMN,M1-YENIKAPI-HAVALIMANI
+ALİBEYKÖY,Fatih,Fatih,İBB (koordinat yok),,1,ALB-ALB,T5 EMINONU-ALIBEYKOY
+AYVANSARAY,Fatih,Fatih,İBB (koordinat yok),,1,ASR-ANS,T5 EMINONU-ALIBEYKOY
+BALAT,Fatih,Fatih,İBB (koordinat yok),,1,BLT-BAL,T5 EMINONU-ALIBEYKOY
+BEYAZIT,Fatih,Fatih,İBB = koordinat,0.0,1,BYZ-KBT,T1-KABATAS-BAGCILAR
+CANKURTARAN,Fatih,Fatih,İBB (koordinat yok),,1,CAN-CAN,TCDD SIRKECI-KAZLICESME
+CEP OTOGAR,Fatih,Fatih,İBB (koordinat yok),,1,ALC-ALC,T5 EMINONU-ALIBEYKOY
+CERRAHPAŞA,Fatih,Fatih,İBB (koordinat yok),,1,CER-CER,TCDD SIRKECI-KAZLICESME
+CİBALİ,Fatih,Fatih,İBB (koordinat yok),,1,CBA-CBA,T5 EMINONU-ALIBEYKOY
+EMNİYET,Fatih,Fatih,İBB = koordinat,0.0,1,EMT-EMT,M1-YENIKAPI-HAVALIMANI
+EMİNÖNÜ,Fatih,Fatih,İBB (koordinat yok),,1,EMH-EMN,T5 EMINONU-ALIBEYKOY
+EMİNÖNÜ 2,Fatih,Fatih,İBB = koordinat,0.0,1,EMI-KBT,T1-KABATAS-BAGCILAR
+EYÜP DEVLET HASTANESİ,Fatih,Fatih,İBB (koordinat yok),,1,EDH-EDH,T5 EMINONU-ALIBEYKOY
+EYÜP TELEFERİK,Fatih,Fatih,İBB (koordinat yok),,1,EYU-EPT,T5 EMINONU-ALIBEYKOY
+FENER,Fatih,Fatih,İBB (koordinat yok),,1,FNR-FEN,T5 EMINONU-ALIBEYKOY
+FESHANE,Fatih,Fatih,İBB (koordinat yok),,1,EYP-FSH,T5 EMINONU-ALIBEYKOY
+FINDIKZADE,Fatih,Fatih,İBB = koordinat,0.0,1,FND-KBT,T1-KABATAS-BAGCILAR
+GÜLHANE,Fatih,Fatih,İBB = koordinat,0.0,1,GLH-KBT,T1-KABATAS-BAGCILAR
+HASEKİ,Fatih,Fatih,İBB = koordinat,0.0,1,HSK-KBT,T1-KABATAS-BAGCILAR
+KOCA MUSTAFA PAŞA,Fatih,Fatih,İBB (koordinat yok),,1,KMP-KMP,TCDD SIRKECI-KAZLICESME
+KUMKAPI,Fatih,Fatih,İBB (koordinat yok),,1,KMK-KMK,TCDD SIRKECI-KAZLICESME
+KÜÇÜKPAZAR,Fatih,Fatih,İBB (koordinat yok),,1,HLC-KKP,T5 EMINONU-ALIBEYKOY
+LALELİ,Fatih,Fatih,İBB = koordinat,0.0,1,LAL-KBT,T1-KABATAS-BAGCILAR
+PAZARTEKKE,Fatih,Fatih,İBB = koordinat,0.0,1,PTK-KBT,T1-KABATAS-BAGCILAR
+SULTANAHMET,Fatih,Fatih,İBB = koordinat,0.0,1,SAH-KBT,T1-KABATAS-BAGCILAR
+SİLAHTARAĞA,Fatih,Fatih,İBB (koordinat yok),,1,SLA-SLA,T5 EMINONU-ALIBEYKOY
+SİRKECİ,Fatih,Fatih,İBB = koordinat,0.0,6,"EMI-MR1, EMI-MR2, EMI-MR3, EMI-MR4, EMI-SRC, EMI-SRK",T1-KABATAS-BAGCILAR | TCDD SIRKECI-KAZLICESME | TCDD TASIMACILIK A.S.
+ULUBATLI,Fatih,Fatih,İBB = koordinat,0.0,1,ULU-ULU,M1-YENIKAPI-HAVALIMANI
+UNİVERSİTE,Fatih,Fatih,İBB (koordinat yok),,1,UNI-UNI,T5 EMINONU-ALIBEYKOY
+VEZNECİLER GÜNEY,Fatih,Fatih,İBB = koordinat,0.0,1,VZN-VZ1,M2-YENIKAPI-HACIOSMAN
+VEZNECİLER KUZEY,Fatih,Fatih,İBB = koordinat,0.0,1,VZN-VZ2,M2-YENIKAPI-HACIOSMAN
+YEDİKULE,Fatih,Fatih,İBB (koordinat yok),,1,YDK-YDK,TCDD SIRKECI-KAZLICESME
+YENİKAPI,Fatih,Fatih,İBB = koordinat,0.0,5,"YNK-MR1, YNK-MR2, YNK-MR3, YNK-YNH, YNK-YNK",M1-YENIKAPI-HAVALIMANI | TCDD SIRKECI-KAZLICESME | TCDD TASIMACILIK A.S.
+YENİKAPI GÜNEY,Fatih,Fatih,İBB = koordinat,0.0,1,YNK-YN1,M2-YENIKAPI-HACIOSMAN
+YENİKAPI KUZEY,Fatih,Fatih,İBB = koordinat,0.0,1,YNK-YN2,M2-YENIKAPI-HACIOSMAN
+YUSUFPAŞA,Fatih,Fatih,İBB = koordinat,0.0,1,AKE-KBT,T1-KABATAS-BAGCILAR
+ÇAPA,Fatih,Fatih,İBB = koordinat,0.0,1,CPA-KBT,T1-KABATAS-BAGCILAR
+ÇEMBERLİTAŞ,Fatih,Fatih,İBB = koordinat,0.0,1,CTS-KBT,T1-KABATAS-BAGCILAR
+ALİ FUAT BAŞGİL,Gaziosmanpaşa,Gaziosmanpaşa,İBB = koordinat,0.0,1,ALF-ALF,T4-TOPKAPI-MESCID-I SELAM
+BEREÇ,Gaziosmanpaşa,Gaziosmanpaşa,İBB = koordinat,0.0,1,BRC-BRC,T4-TOPKAPI-MESCID-I SELAM
+KARADENİZ MAH. BATI,Gaziosmanpaşa,Gaziosmanpaşa,İBB (koordinat yok),,1,MRS-KD1,M7-KABATAS-MAHMUTBEY
+KARADENİZ MAH. DOĞU,Gaziosmanpaşa,Gaziosmanpaşa,İBB (koordinat yok),,1,MRS-KD2,M7-KABATAS-MAHMUTBEY
+KARADENİZ MAHALLESİ,Gaziosmanpaşa,Gaziosmanpaşa,İBB = koordinat,0.0,1,KRM-KRM,T4-TOPKAPI-MESCID-I SELAM
+KİPTAŞ VENEZİA,Gaziosmanpaşa,Gaziosmanpaşa,İBB = koordinat,0.0,1,MRS-MRS,T4-TOPKAPI-MESCID-I SELAM
+SAĞMALCILAR,Gaziosmanpaşa,Gaziosmanpaşa,İBB = koordinat,0.0,1,SML-SML,T4-TOPKAPI-MESCID-I SELAM
+T4 KİPTAŞ VENEZİA,Gaziosmanpaşa,Gaziosmanpaşa,İBB korundu (sınır boyu),0.0,1,MRS-MR2,T4-TOPKAPI-MESCID-I SELAM
+YENİMAHALLE,Gaziosmanpaşa,Gaziosmanpaşa,İBB (koordinat yok),,1,YNL-YNL,M7-KABATAS-MAHMUTBEY
+AKINCILAR,Güngören,Güngören,İBB = koordinat,0.0,1,AKN-KBT,T1-KABATAS-BAGCILAR
+CAMİ,Güngören,Güngören,İBB = koordinat,0.0,1,CMI-KBT,T1-KABATAS-BAGCILAR
+DAVUTPAŞA,Güngören,Güngören,İBB (koordinat yok),,1,DAV-DAV,M1-YENIKAPI-HAVALIMANI
+GÜNEŞTEPE,Güngören,Güngören,İBB = koordinat,0.0,1,GNT-KBT,T1-KABATAS-BAGCILAR
+GÜNGÖREN,Güngören,Güngören,İBB = koordinat,0.0,1,GNG-KBT,T1-KABATAS-BAGCILAR
+KERESTECİLER,Güngören,Güngören,İBB korundu (sınır boyu),3.0,1,KRS-KBT,T1-KABATAS-BAGCILAR
+MEHMETAKİF,Güngören,Güngören,İBB korundu (sınır boyu),2.0,1,MAF-KBT,T1-KABATAS-BAGCILAR
+MERTER,Güngören,Güngören,İBB korundu (sınır boyu),14.0,1,MER-MER,M1-YENIKAPI-HAVALIMANI
+SOĞANLI,Güngören,Güngören,İBB = koordinat,0.0,1,SGN-KBT,T1-KABATAS-BAGCILAR
+ACIBADEM (BATI),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,ACM-AC1,M4-KADIKOY-TAVSANTEPE
+ACIBADEM (DOĞU),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,ACM-AC2,M4-KADIKOY-TAVSANTEPE
+AYRILIKÇEŞME,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,AYC-AY1,M4-KADIKOY-TAVSANTEPE
+AYRILIKÇEŞMESİ,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,AYC-MR1,TCDD TASIMACILIK A.S.
+AYŞE KADIN,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,AYK-AYK,M8 DUDULLU - BOSTANCI
+BOSTANCI,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,BST-BT1,M4-KADIKOY-TAVSANTEPE
+BOSTANCI,Kadıköy,Kadıköy,İBB = koordinat,0.0,3,"BTI-BCI, BTI-MR1, BTI-MR2",M8 DUDULLU - BOSTANCI | TCDD TASIMACILIK A.S.
+BOSTANCI (BATI),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,BST-BT3,M4-KADIKOY-TAVSANTEPE
+BOSTANCI (DOĞU),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,BST-BT2,M4-KADIKOY-TAVSANTEPE
+EMİN ALİ PAŞA,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,EAP-EAP,M8 DUDULLU - BOSTANCI
+ERENKÖY,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,ERK-MR1,TCDD TASIMACILIK A.S.
+FENERYOLU,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,FNY-MR1,TCDD TASIMACILIK A.S.
+GÖZTEPE,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,GZT-MR1,TCDD TASIMACILIK A.S.
+KADIKÖY (BATI),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,KAD-KD2,M4-KADIKOY-TAVSANTEPE
+KADIKÖY (DOĞU),Kadıköy,Kadıköy,İBB = koordinat,0.0,1,KAD-KD1,M4-KADIKOY-TAVSANTEPE
+SUADİYE,Kadıköy,Kadıköy,İBB = koordinat,0.0,1,SUA-MR1,TCDD TASIMACILIK A.S.
+SÖĞÜTLÜÇEŞME,Kadıköy,Kadıköy,İBB = koordinat,0.0,2,"SCM-MR1, SCM-MR2",TCDD TASIMACILIK A.S.
+T3-KADIKOY-MODA (ADSIZ İSTASYON),Kadıköy,Kadıköy,İBB (koordinat yok),,1,KODSUZ-T3-KADIKOY-MODA,T3-KADIKOY-MODA
+YENİSAHRA,Kadıköy,Kadıköy,İBB (koordinat yok),,1,YSR-YSR,M4-KADIKOY-TAVSANTEPE
+ATALAR,Kartal,Kartal,İBB = koordinat,0.0,1,ATA-MR1,TCDD TASIMACILIK A.S.
+BAŞAK,Kartal,Kartal,İBB = koordinat,0.0,1,BSA-MR1,TCDD TASIMACILIK A.S.
+CEVİZLİ,Kartal,Kartal,İBB = koordinat,0.0,2,"CVZ-MR1, CVZ-MR2",TCDD TASIMACILIK A.S.
+HASTANE (BATI),Kartal,Kartal,İBB = koordinat,0.0,1,HST-HS2,M4-KADIKOY-TAVSANTEPE
+HASTANE (DOĞU/ADLİYE),Kartal,Kartal,İBB = koordinat,0.0,1,HST-HS1,M4-KADIKOY-TAVSANTEPE
+KARTAL,Kartal,Kartal,İBB = koordinat,0.0,1,KTL-MR1,TCDD TASIMACILIK A.S.
+KARTAL (BATI),Kartal,Kartal,İBB = koordinat,0.0,1,KRL-KR2,M4-KADIKOY-TAVSANTEPE
+KARTAL (DOĞU),Kartal,Kartal,İBB = koordinat,0.0,1,KRL-KR1,M4-KADIKOY-TAVSANTEPE
+SOĞANLIK,Kartal,Kartal,İBB = koordinat,0.0,1,SGL-SGL,M4-KADIKOY-TAVSANTEPE
+YAKACIK (BATI),Kartal,Kartal,İBB = koordinat,0.0,1,YKC-YC2,M4-KADIKOY-TAVSANTEPE
+YAKACIK (DOĞU),Kartal,Kartal,İBB = koordinat,0.0,1,YKC-YC1,M4-KADIKOY-TAVSANTEPE
+YUNUS,Kartal,Kartal,İBB = koordinat,0.0,1,YUN-MR1,TCDD TASIMACILIK A.S.
+4 LEVENT 2 GÜNEY,Kağıthane,Kağıthane,İBB = koordinat,0.0,1,L44-L44,M2-YENIKAPI-HACIOSMAN
+4 LEVENT KUZEY,Kağıthane,Kağıthane,İBB = koordinat,0.0,1,L24-L24,M2-YENIKAPI-HACIOSMAN
+KAĞITHANE,Kağıthane,Kağıthane,İBB = koordinat,0.0,1,KGH-KGT,TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+KAĞITHANE BATI,Kağıthane,Kağıthane,İBB (koordinat yok),,1,KGH-KG2,M7-KABATAS-MAHMUTBEY
+KAĞITHANE DOGU,Kağıthane,Kağıthane,İBB (koordinat yok),,1,KGH-KG1,M7-KABATAS-MAHMUTBEY
+NURTEPE BATI,Kağıthane,Kağıthane,İBB (koordinat yok),,1,NRT-NR1,M7-KABATAS-MAHMUTBEY
+NURTEPE DOĞU,Kağıthane,Kağıthane,İBB (koordinat yok),,1,NRT-NR2,M7-KABATAS-MAHMUTBEY
+ÇAĞLAYAN BATI,Kağıthane,Kağıthane,İBB (koordinat yok),,1,CGL-CG1,M7-KABATAS-MAHMUTBEY
+ÇAĞLAYAN DOĞU,Kağıthane,Kağıthane,İBB (koordinat yok),,1,CGL-CG2,M7-KABATAS-MAHMUTBEY
+ATATÜRK MAHALLESİ,Küçükçekmece,Küçükçekmece,İBB = koordinat,0.0,1,ATT-ATT,M9 ATAKOY-IKITELLI METRO
+BAHARİYE,Küçükçekmece,Küçükçekmece,İBB (koordinat yok),,1,BHR-BHR,M9 ATAKOY-IKITELLI METRO
+HALKALI,Küçükçekmece,Bakırköy / Küçükçekmece,İBB = koordinat,0.0,2,"HAL-HLK, HAL-MR1",TCDD - HALKALI-BASAKSEHIR | TCDD TASIMACILIK A.S.
+HALKALI KUZEY,Küçükçekmece,Küçükçekmece,İBB = koordinat,0.0,1,HLL-HL2,M9 ATAKOY-IKITELLI METRO
+KÜÇÜKÇEKMECE,Küçükçekmece,Küçükçekmece,İBB = koordinat,0.0,1,KCC-MR1,TCDD TASIMACILIK A.S.
+M.KEMAL,Küçükçekmece,Küçükçekmece,İBB = koordinat,0.0,1,MKE-MR1,TCDD TASIMACILIK A.S.
+MASKO,Küçükçekmece,Küçükçekmece,İBB (koordinat yok),,1,MAS-MAS,M9 ATAKOY-IKITELLI METRO
+ESENKENT CEVİZLİ,Maltepe,Maltepe,İBB = koordinat,0.0,1,EKT-EKT,M4-KADIKOY-TAVSANTEPE
+GÜLSUYU,Maltepe,Maltepe,İBB = koordinat,0.0,1,GLS-GLS,M4-KADIKOY-TAVSANTEPE
+HUZUREVİ,Maltepe,Maltepe,İBB = koordinat,0.0,1,HZE-HZE,M4-KADIKOY-TAVSANTEPE
+KÜÇÜKYALI,Maltepe,Maltepe,İBB = koordinat,0.0,1,KCL-KCL,M4-KADIKOY-TAVSANTEPE
+KÜÇÜKYALI,Maltepe,Maltepe,İBB = koordinat,0.0,2,"KCY-MR1, KCY-MR2",TCDD TASIMACILIK A.S.
+MALTEPE,Maltepe,Maltepe,İBB = koordinat,0.0,1,MLP-MLP,M4-KADIKOY-TAVSANTEPE
+MALTEPE,Maltepe,Maltepe,İBB = koordinat,0.0,1,MLT-MR1,TCDD TASIMACILIK A.S.
+SÜREYYA PLAJI,Maltepe,Maltepe,İBB = koordinat,0.0,1,SRY-MR1,TCDD TASIMACILIK A.S.
+İDEALTEPE,Maltepe,Maltepe,İBB = koordinat,0.0,1,IDT-MR1,TCDD TASIMACILIK A.S.
+FEVZİ ÇAKMAK,Pendik,Pendik,İBB = koordinat,0.0,1,FCK-FCK,M4-KADIKOY-TAVSANTEPE
+GÜZELYALI,Pendik,Pendik,İBB = koordinat,0.0,1,GUZ-MR1,TCDD TASIMACILIK A.S.
+KAYNARCA,Pendik,Pendik,İBB = koordinat,0.0,1,KAY-MR1,TCDD TASIMACILIK A.S.
+KURTKÖY,Pendik,Pendik,İBB (koordinat yok),,1,KKY-KKY,M4-KADIKOY-TAVSANTEPE
+PENDİK,Pendik,Pendik,İBB = koordinat,0.0,1,PEN-MR1,TCDD TASIMACILIK A.S.
+PENDİK (BATI),Pendik,Pendik,İBB = koordinat,0.0,1,PEN-PN2,M4-KADIKOY-TAVSANTEPE
+PENDİK (DOĞU),Pendik,Pendik,İBB = koordinat,0.0,1,PEN-PN1,M4-KADIKOY-TAVSANTEPE
+SABİHA GÖKÇEN HAVALİMANI,Pendik,Pendik,İBB (koordinat yok),,1,SGH-SGH,M4-KADIKOY-TAVSANTEPE
+TAVŞANTEPE (BATI),Pendik,Pendik,İBB = koordinat,0.0,1,TVT-TV1,M4-KADIKOY-TAVSANTEPE
+TAVŞANTEPE (DOĞU),Pendik,Pendik,İBB = koordinat,0.0,1,TVT-TV2,M4-KADIKOY-TAVSANTEPE
+TERSANE,Pendik,Pendik,İBB = koordinat,0.0,2,"TER-MR1, TER-MR2",TCDD TASIMACILIK A.S.
+YAYALAR,Pendik,Pendik,İBB (koordinat yok),,1,YLR-YLR,M4-KADIKOY-TAVSANTEPE
+MECLİS,Sancaktepe,Sancaktepe,İBB = koordinat,0.0,1,MCS-MCS,M5-USKUDAR CEKMEKOY METROSU
+SAMANDIRA MERKEZ,Sancaktepe,Sancaktepe,İBB = koordinat,0.0,1,SDM-SDM,M5-USKUDAR CEKMEKOY METROSU
+SANCAKTEPE,Sancaktepe,Sancaktepe,İBB = koordinat,0.0,1,SCT-SCT,M5-USKUDAR CEKMEKOY METROSU
+SARIGAZI,Sancaktepe,Sancaktepe,İBB = koordinat,0.0,1,SGZ-SGZ,M5-USKUDAR CEKMEKOY METROSU
+ATATÜRK OTO SANAYİ GÜNEY,Sarıyer,Şişli,koordinat,3986.0,1,AOS-AOS,M2-YENIKAPI-HACIOSMAN
+ATATÜRK OTO SANAYİ KUZEY,Sarıyer,Şişli,koordinat,3986.0,1,A1S-A1S,M2-YENIKAPI-HACIOSMAN
+BOĞAZİÇİ,Sarıyer,Sarıyer,İBB korundu (sınır boyu),19.0,1,BIU-BIU,M6-LEVENT - RUMELI HISARUSTU
+DARÜŞŞAFAKA,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,DS1-DS1,M2-YENIKAPI-HACIOSMAN
+HACIOSMAN,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,HC1-HC1,M2-YENIKAPI-HACIOSMAN
+RUMELİ HİSARÜSTÜ,Sarıyer,Sarıyer,İBB (koordinat yok),,1,BIU-RHU,F4 RUMELI HISARUSTU -ASIYAN
+SANAYİ MAH. GÜNEY,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,LYS-LYS,M2-YENIKAPI-HACIOSMAN
+SANAYİ MAH. KUZEY,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,L1S-L1S,M2-YENIKAPI-HACIOSMAN
+SEYRANTEPE 1 BATI,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,ST1-ST1,M2-YENIKAPI-HACIOSMAN
+SEYRANTEPE 2 DOĞU,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,ST2-ST2,M2-YENIKAPI-HACIOSMAN
+SEYRANTEPE 3 STAD GİRİŞİ,Sarıyer,Sarıyer,İBB = koordinat,0.0,1,ST3-ST3,M2-YENIKAPI-HACIOSMAN
+İTÜ GÜNEY,Sarıyer,Şişli,koordinat,2772.0,1,ITU-ITU,M2-YENIKAPI-HACIOSMAN
+İTÜ KUZEY,Sarıyer,Şişli,koordinat,2772.0,1,ITU-I1U,M2-YENIKAPI-HACIOSMAN
+CEBECİ,Sultangazi,Sultangazi,İBB = koordinat,0.0,1,CBC-CBC,T4-TOPKAPI-MESCID-I SELAM
+HACI ŞÜKRÜ,Sultangazi,Sultangazi,İBB = koordinat,0.0,1,HCS-HCS,T4-TOPKAPI-MESCID-I SELAM
+MESCİDİ SELAM,Sultangazi,Sultangazi,İBB = koordinat,0.0,1,MSL-MSL,T4-TOPKAPI-MESCID-I SELAM
+SULTANÇİFTLİĞİ,Sultangazi,Sultangazi,İBB = koordinat,0.0,1,SCF-SCF,T4-TOPKAPI-MESCID-I SELAM
+YENİMAHALLE,Sultangazi,Sultangazi,İBB = koordinat,0.0,1,YNM-YNM,T4-TOPKAPI-MESCID-I SELAM
+AYDINTEPE,Tuzla,Tuzla,İBB = koordinat,0.0,1,AYD-MR1,TCDD TASIMACILIK A.S.
+TUZLA,Tuzla,Tuzla,İBB = koordinat,0.0,1,TUZ-MR1,TCDD TASIMACILIK A.S.
+İÇMELER,Tuzla,Tuzla,İBB = koordinat,0.0,1,ICM-MR1,TCDD TASIMACILIK A.S.
+AKŞEMSETTİN,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,ATM-KBT,T1-KABATAS-BAGCILAR
+ATATÜRK ÖĞRENCİ YURDU,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,AOY-KBT,T1-KABATAS-BAGCILAR
+FETİHKAPI,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,FKP-FKP,T4-TOPKAPI-MESCID-I SELAM
+KAZLIÇEŞME,Zeytinburnu,Fatih / Zeytinburnu,İBB = koordinat,0.0,2,"KCS-KCS, KCS-MR1",TCDD SIRKECI-KAZLICESME | TCDD TASIMACILIK A.S.
+MERKEZEFENDİ,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,MRE-KBT,T1-KABATAS-BAGCILAR
+MİTHATPAŞA,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,MPS-KBT,T1-KABATAS-BAGCILAR
+TOPKAPI,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,2,"TPI-HBL, TPK-KBT",T1-KABATAS-BAGCILAR | T4-TOPKAPI-MESCID-I SELAM
+ZEYTİNBURNU,Zeytinburnu,Zeytinburnu,İBB = koordinat,0.0,1,ZBR-MR1,TCDD TASIMACILIK A.S.
+ÇEKMEKÖY 1,Çekmeköy,Çekmeköy,İBB = koordinat,0.0,1,CKM-CK1,M5-USKUDAR CEKMEKOY METROSU
+ÇEKMEKÖY 2,Çekmeköy,Çekmeköy,İBB = koordinat,0.0,1,CKM-CK2,M5-USKUDAR CEKMEKOY METROSU
+ALTINŞEHİR,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,ASI-ASI,M5-USKUDAR CEKMEKOY METROSU
+DUDULLU,Ümraniye,Ümraniye,İBB = koordinat,0.0,2,"DDI-DDI, DDI-DDL",M5-USKUDAR CEKMEKOY METROSU | M8 DUDULLU - BOSTANCI
+HUZUR,Ümraniye,Maltepe,koordinat,4656.0,1,HUZ-HUZ,M8 DUDULLU - BOSTANCI
+IHLAMURKUYU,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,IKI-IKI,M5-USKUDAR CEKMEKOY METROSU
+MODOKO KEYAP,Ümraniye,Maltepe,koordinat,2950.0,1,MDK-MDK,M8 DUDULLU - BOSTANCI
+NECİP FAZIL,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,NFI-NFI,M5-USKUDAR CEKMEKOY METROSU
+PARSELLER,Ümraniye,Maltepe,koordinat,5616.0,1,PRS-PRS,M8 DUDULLU - BOSTANCI
+YAMANEVLER,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,YME-YME,M5-USKUDAR CEKMEKOY METROSU
+ÇAKMAK,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,CMK-CMK,M5-USKUDAR CEKMEKOY METROSU
+ÇARŞI,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,CAR-CAR,M5-USKUDAR CEKMEKOY METROSU
+İMAM HATİP LİSESİ,Ümraniye,Ümraniye,İBB = koordinat,0.0,1,IHL-IHL,M5-USKUDAR CEKMEKOY METROSU
+İMES,Ümraniye,Maltepe,koordinat,2225.0,1,IMS-IMS,M8 DUDULLU - BOSTANCI
+ALTUNİZADE 1,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,ALZ-AM1,M5-USKUDAR CEKMEKOY METROSU
+ALTUNİZADE 2,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,ALZ-AM2,M5-USKUDAR CEKMEKOY METROSU
+BAĞLARBAŞI,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,BLR-BLR,M5-USKUDAR CEKMEKOY METROSU
+BULGURLU,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,BLG-BLG,M5-USKUDAR CEKMEKOY METROSU
+FISTIKAĞACI,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,FSK-FSK,M5-USKUDAR CEKMEKOY METROSU
+GÖZTEPE,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,GZP-GZP,M4-KADIKOY-TAVSANTEPE
+KISIKLI,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,KSK-KSK,M5-USKUDAR CEKMEKOY METROSU
+ÜMRANİYE,Üsküdar,Üsküdar,İBB korundu (sınır boyu),9.0,1,UMR-UMR,M5-USKUDAR CEKMEKOY METROSU
+ÜNALAN,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,UNL-UNL,M4-KADIKOY-TAVSANTEPE
+ÜSKÜDAR,Üsküdar,Üsküdar,İBB = koordinat,0.0,4,"USE-MR1, USE-MR2, USE-MR3, USE-USA",M5-USKUDAR CEKMEKOY METROSU | TCDD TASIMACILIK A.S.
+ÜSKÜDAR 1,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,USE-US1,M5-USKUDAR CEKMEKOY METROSU
+ÜSKÜDAR 2,Üsküdar,Üsküdar,İBB = koordinat,0.0,1,USE-US2,M5-USKUDAR CEKMEKOY METROSU
+DARICA,İstanbul dışı: Gebze,Darıca,koordinat,,1,DAR-MR1,TCDD TASIMACILIK A.S.
+FATİH,İstanbul dışı: Gebze,Gebze,koordinat,,1,FAT-MR1,TCDD TASIMACILIK A.S.
+GEBZE,İstanbul dışı: Gebze,Darıca / Gebze,koordinat,,2,"GEB-MR1, GEB-MR2",TCDD TASIMACILIK A.S.
+OSMANGAZİ,İstanbul dışı: Gebze,Darıca,koordinat,,1,OSM-MR1,TCDD TASIMACILIK A.S.
+ÇAYIROVA,İstanbul dışı: Gebze,Çayırova,koordinat,,1,CAY-MR1,TCDD TASIMACILIK A.S.
+GAYRETTEPE,Şişli,Şişli,İBB = koordinat,0.0,2,"GTP-GTP, GTP-GYT",M2-YENIKAPI-HACIOSMAN | TCDD - GAYRETTEPE-ISTANBUL YENI HAVALIMANI
+LEVENT 2 KUZEY,Şişli,Şişli,İBB = koordinat,0.0,1,LVT-L21,M2-YENIKAPI-HACIOSMAN
+LEVENT BATI KONKORS,Şişli,Şişli,İBB = koordinat,0.0,1,LVT-LVB,M6-LEVENT - RUMELI HISARUSTU
+LEVENT DOĞU KONKORS,Şişli,Şişli,İBB = koordinat,0.0,1,LVT-LVD,M6-LEVENT - RUMELI HISARUSTU
+LEVENT GÜNEY,Şişli,Şişli,İBB = koordinat,0.0,1,LVT-LVT,M2-YENIKAPI-HACIOSMAN
+MAÇKA,Şişli,Şişli,İBB = koordinat,0.0,1,MCK-MCK,TF1-TELEFERIK MACKA - TASKISLA
+MECİDİYEKÖY BATI,Şişli,Şişli,İBB (koordinat yok),,1,MCD-MC1,M7-KABATAS-MAHMUTBEY
+MECİDİYEKÖY DOĞU,Şişli,Şişli,İBB (koordinat yok),,1,MCD-MC2,M7-KABATAS-MAHMUTBEY
+OSMANBEY 2 GÜNEY,Şişli,Şişli,İBB = koordinat,0.0,1,O2Y-O2Y,M2-YENIKAPI-HACIOSMAN
+OSMANBEY KUZEY,Şişli,Şişli,İBB = koordinat,0.0,1,OBY-OBY,M2-YENIKAPI-HACIOSMAN
+ŞİŞLİ 2 KUZEY,Şişli,Şişli,İBB = koordinat,0.0,1,MCD-S2L,M2-YENIKAPI-HACIOSMAN
+ŞİŞLİ GÜNEY,Şişli,Şişli,İBB = koordinat,0.0,1,MCD-SSL,M2-YENIKAPI-HACIOSMAN

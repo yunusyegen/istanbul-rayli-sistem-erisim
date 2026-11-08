@@ -1,4 +1,8 @@
 senaryo,istasyon,sıfır ilçe,Gini,Spearman r,Spearman p,Mann-Whitney p
-1. Şu anki analiz (hepsi dahil),304,10,0.52,0.267,0.101,0.161
-"2. Teleferik, füniküler, Tünel, nostaljik hariç",299,10,0.514,0.279,0.085,0.17
-3. Belirsiz 13 istasyon hiç sayılmazsa,292,10,0.517,0.272,0.093,0.144
+1. Ana analiz,317,10,0.5,0.267,0.1,0.108
+2. Koordinat kontrolü yok (İBB ilçe kaydı olduğu gibi),317,10,0.519,0.258,0.113,0.17
+3. Koordinat her zaman kazanır (sınır payı 0 m),317,10,0.491,0.317,0.049,0.108
+4. Sınır payı 500 m,317,10,0.5,0.295,0.069,0.108
+5. Aynı yer yarıçapı 500 m,319,10,0.5,0.271,0.095,0.114
+6. Aynı yer yarıçapı 2000 m,309,10,0.5,0.258,0.113,0.084
+"7. Teleferik, füniküler, Tünel ve nostaljik tramvay hariç",310,10,0.491,0.3,0.063,0.108
