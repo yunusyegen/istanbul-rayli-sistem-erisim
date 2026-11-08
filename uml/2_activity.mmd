@@ -1,36 +1,45 @@
 %% Activity Diyagramı
-%% Temel iş süreci: ham veriden ilçe erişim tablosuna
+%% Temel iş süreci: veri indirmeden ilçe erişim tablosuna
 flowchart TB
-    BAS((Başla)) --> A["Dosyayı oku, sütunları bul,<br/>adı veya ilçesi boş satırları at"]
-    A --> C["İstasyon adını normalleştir:<br/>büyük harf, -1 / -2 ve HOL n ekini sil"]
-    C --> D{"Aynı istasyon birden fazla<br/>ilçeye mi kayıtlı?"}
-    D -- Evet --> E{"Bu istasyon için elle<br/>düzeltme tanımlı mı?"}
-    E -- Evet --> E1["Tanımlı ilçeyi ata"]
-    E -- Hayır --> E2["En çok geçtiği ilçeyi ata,<br/>kontrol listesine ekle"]
-    D -- Hayır --> G["İstasyonu kayıtlı<br/>olduğu ilçeye ata"]
-    E1 --> H
-    E2 --> H
-    G --> H{"İlçe İstanbul'un 39<br/>ilçesinden biri mi?"}
-    H -- Hayır --> H1["Analiz dışı bırak:<br/>Gebze, Darıca, Çayırova"]
-    H -- Evet --> I["İlçeye göre farklı istasyonları say,<br/>TÜİK nüfusuyla birleştir"]
-    H1 --> I
-    I --> J{"Nüfusu girilmemiş<br/>ilçe var mı?"}
-    J -- Evet --> JH["Hata ver ve dur"] --> SONH((Hata ile<br/>bitir))
-    J -- Hayır --> K["100.000 kişiye düşen istasyon sayısını hesapla"]
-    K --> L1["Betimsel<br/>istatistik"]
-    K --> L2["Gini katsayısı<br/>ve Lorenz eğrisi"]
-    K --> L3["H1: Pearson ve<br/>Spearman"]
-    K --> L4["H2: Mann-<br/>Whitney U"]
-    L1 --> M["Duyarlılık analizi: 3 senaryoyu karşılaştır"]
-    L2 --> M
-    L3 --> M
-    L4 --> M
-    M --> N["Tabloları ve 4 şekli kaydet"]
-    N --> SON(((Bitir)))
+    BAS((Başla)) --> A["Üç veri dosyasını indir:<br/>İBB, TÜİK, ilçe sınırları"]
+    A --> B{"İndirme<br/>başarılı mı?"}
+    B -- Hayır --> B1["Dosyayı elle yükle"]
+    B -- Evet --> C
+    B1 --> C["Oku, boş adlara hat adı ver,<br/>istasyon adını normalleştir"]
+    C --> D["Her kodun koordinatını çöz,<br/>bozuk yazımları ele"]
+    D --> E["Adı aynı ve birbirine 1 km'den<br/>yakın kodları tek istasyonda topla"]
+    E --> F{"İstasyonun<br/>koordinatı var mı?"}
+    F -- Hayır --> F1["İBB'nin yazdığı<br/>ilçeyi kullan"]
+    F -- Evet --> G["Koordinatın düştüğü<br/>ilçeyi sınır dosyasından bul"]
+    G --> H{"İBB'nin ilçesiyle<br/>aynı mı?"}
+    H -- Evet --> H1["Bu ilçeyi kullan"]
+    H -- Hayır --> I{"Koordinat İBB ilçesinin<br/>sınırına 200 m'den<br/>yakın mı?"}
+    I -- Evet --> I1["İBB'nin ilçesini koru"]
+    I -- Hayır --> I2["Koordinatın ilçesini kabul et"]
+    F1 --> J
+    H1 --> J
+    I1 --> J
+    I2 --> J{"İlçe İstanbul'un 39<br/>ilçesinden biri mi?"}
+    J -- Hayır --> J1["Analiz dışı bırak:<br/>Gebze, Darıca, Çayırova"]
+    J -- Evet --> K["İlçeye göre say,<br/>TÜİK nüfusuyla birleştir"]
+    J1 --> K
+    K --> L{"Nüfusu girilmemiş<br/>ilçe var mı?"}
+    L -- Evet --> L1["Hata ver ve dur"] --> SONH((Hata ile<br/>bitir))
+    L -- Hayır --> M["100.000 kişiye düşen<br/>istasyon sayısını hesapla"]
+    M --> N1["Betimsel<br/>istatistik"]
+    M --> N2["Gini ve<br/>Lorenz"]
+    M --> N3["H1:<br/>korelasyon"]
+    M --> N4["H2: Mann-<br/>Whitney U"]
+    N1 --> O["Duyarlılık analizi:<br/>7 senaryoyu karşılaştır"]
+    N2 --> O
+    N3 --> O
+    N4 --> O
+    O --> P["Tabloları ve 4 şekli kaydet"]
+    P --> SON(((Bitir)))
 
     classDef karar fill:#fff3cd,stroke:#856404,stroke-width:1.5px
     classDef bitis fill:#d4edda,stroke:#155724,stroke-width:2px
     classDef hata fill:#f8d7da,stroke:#721c24
-    class D,E,H,J karar
+    class B,F,H,I,J,L karar
     class BAS,SON bitis
-    class JH,SONH hata
+    class L1,SONH hata

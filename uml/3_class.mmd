@@ -3,17 +3,16 @@
 classDiagram
     class VeriKaynagi {
         <<abstract>>
-        +String dosyaYolu
-        +int yil
+        +String ad
+        +List adresler
+        +int enAzBayt
         +String lisans
-        +String indirmeTarihi
+        +indir() bool
         +oku() DataFrame
-        +dogrula() bool
     }
 
     class IBBIstasyonVerisi {
         +String ayrac
-        +int satirSayisi
         +oku() DataFrame
         +sutunBul(adaylar) String
     }
@@ -24,22 +23,40 @@ classDiagram
         +toplamiKontrolEt() bool
     }
 
-    class Istasyon {
-        +String ad
+    class IlceSiniriVerisi {
+        +Dict sinirlar
+        +sinirlariYukle() void
+        +ilceBul(nokta) String
+        +sinirUzakligi(ilce, nokta) float
+    }
+
+    class IstasyonKodu {
+        +String kod
         +String temizAd
         +String hat
-        +String kayitliIlce
-        +adiNormallestir() String
+        +Tuple konum
+        +Dict ilceSayim
     }
 
     class IstasyonTemizleyici {
-        -Map elleDuzeltme
-        -List belirsizIstasyonlar
-        +bosSatirlariAt() int
-        +adlariBirlestir() int
-        +ilceAta() void
-        +istanbulDisiniAyikla() List
-        +temizlikRaporu() String
+        +adiDuzelt(ad) String
+        +koordinatCoz(metin) float
+        +kodlariOzetle() List
+    }
+
+    class IstasyonYerlestirici {
+        +int birlestirmeYaricapi
+        +int sinirPayi
+        +istasyonlariOlustur() List
+        +ilceyiBelirle(istasyon) Tuple
+    }
+
+    class Istasyon {
+        +String ad
+        +String ilce
+        +String ilceIBB
+        +String karar
+        +int sinirUzakligi
     }
 
     class Ilce {
@@ -53,7 +70,6 @@ classDiagram
     class ErisimTablosu {
         +List~Ilce~ ilceler
         +olustur() void
-        +siralaAzalan() List~Ilce~
         +sifirIstasyonluIlceler() List~Ilce~
         +csvYaz(yol) void
     }
@@ -61,8 +77,6 @@ classDiagram
     class AnalizMotoru {
         +betimselIstatistik() DataFrame
         +giniKatsayisi() float
-        +lorenzNoktalari() Tuple
-        +degisimKatsayisi() float
         +korelasyon() Tuple
         +mannWhitneyU() Tuple
         +duyarlilikAnalizi() DataFrame
@@ -78,8 +92,12 @@ classDiagram
 
     VeriKaynagi <|-- IBBIstasyonVerisi : kalıtım
     VeriKaynagi <|-- TUIKNufusVerisi : kalıtım
+    VeriKaynagi <|-- IlceSiniriVerisi : kalıtım
     IBBIstasyonVerisi ..> IstasyonTemizleyici : besler
-    IstasyonTemizleyici "1" --> "*" Istasyon : temizler
+    IstasyonTemizleyici "1" --> "*" IstasyonKodu : üretir
+    IstasyonYerlestirici ..> IstasyonKodu : gruplar
+    IlceSiniriVerisi ..> IstasyonYerlestirici : sınırları sağlar
+    IstasyonYerlestirici "1" --> "*" Istasyon : üretir
     Ilce "1" o-- "*" Istasyon : barındırır
     TUIKNufusVerisi ..> Ilce : nüfusu sağlar
     ErisimTablosu "1" *-- "39" Ilce : içerir
