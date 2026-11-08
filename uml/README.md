@@ -144,7 +144,7 @@ diyagramdaki her kutunun karşılığı `analiz/analiz.ipynb` içinde bir hücre
 flowchart TB
     BAS((Başla)) --> A["Üç veri dosyasını indir:<br/>İBB, TÜİK, ilçe sınırları"]
     A --> B{"İndirme<br/>başarılı mı?"}
-    B -- Hayır --> B1["Dosyayı elle yükle"]
+    B -- Hayır --> B1["İBB için yedek özet tabloyu kullan,<br/>o da olmazsa dosyayı elle yükle"]
     B -- Evet --> C
     B1 --> C["Oku, boş adlara hat adı ver,<br/>istasyon adını normalleştir"]
     C --> D["Her kodun koordinatını çöz,<br/>bozuk yazımları ele"]
@@ -199,7 +199,8 @@ Altı karar var ve hepsi veriyle çalışırken karşılaştığım gerçek soru
 
 1. **İndirme başarılı mı?** Not defteri üç veri dosyasını kaynağından kendisi indiriyor. Sunucu yanıt
    vermezse ya da yarım dosya gönderirse (İBB sunucusu bir denememde 14 MB'ın 10,8 MB'ında bağlantıyı
-   kesti) dosya elle yükleniyor.
+   kesti, Colab'daki ilk denememde ise hiç bağlanılamadı) İBB dosyası yerine depodaki yedek özet tablo
+   kullanılıyor, o da olmazsa dosya elle yükleniyor.
 2. **İstasyonun koordinatı var mı?** 322 istasyondan 56'sının koordinatı yok ya da kullanılamıyor
    (Excel'de bozulmuş). Onlarda İBB'nin yazdığı ilçe kullanılıyor.
 3. **Koordinatın ilçesi İBB'ninkiyle aynı mı?** 322 istasyondan 234'ünde aynı çıktı. Fark çıkarsa
@@ -245,6 +246,7 @@ classDiagram
         <<abstract>>
         +String ad
         +List adresler
+        +String yedekAdres
         +int enAzBayt
         +String lisans
         +indir() bool
@@ -358,7 +360,7 @@ metodun karşılığı not defterinde bir fonksiyon olarak var; sınıflar bunla
 ### Sınıflar
 
 - **VeriKaynagi** soyut sınıf. Üç veri kaynağının ortak davranışını (adresten indir, oku) ve ortak
-  özelliklerini (adresler, en az beklenen boyut, lisans) tutuyor. Lisans bilgisini sınıfa koydum çünkü
+  özelliklerini (adresler, yedek adres, en az beklenen boyut, lisans) tutuyor. Lisans bilgisini sınıfa koydum çünkü
   dersin kuralı kaynak ve lisansın kayıt altında olmasını istiyor. En az boyut ise sunucu gerçek dosya
   yerine kısa bir hata metni verirse bunu anlamak için.
 - **IBBIstasyonVerisi**, **TUIKNufusVerisi** ve **IlceSiniriVerisi** bu soyut sınıftan türüyor. Üçü de

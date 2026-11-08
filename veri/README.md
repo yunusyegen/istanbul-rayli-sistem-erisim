@@ -9,6 +9,9 @@ Bu klasörde verinin nereden geldiği ve nasıl kullanıldığı anlatılıyor.
   bağlantıları kullanın.
 - `islenmis/` : Not defterinin ürettiği tablolar (bkz. 4. bölüm).
 - `ilce_nufus.csv` : 39 ilçenin yakası ve TÜİK nüfusu. Elle dolduruldu.
+- `istasyon_ozet.csv` : İBB dosyasının analizde kullanılan altı sütununun, aynı değerlere sahip satır
+  sayılarıyla özetlenmiş hâli (135.783 satır yerine 382 satır, 33 KB). İBB sunucusuna ulaşılamazsa not
+  defteri bunu kullanıyor.
 
 ## 1. Raylı sistem istasyon verisi (İBB)
 
@@ -41,6 +44,15 @@ Dosyadaki sütunlar:
 Bu projede yolcu sayısı değil, istasyonun kendisi kullanılıyor: adı, hattı, kodu, İBB'nin yazdığı
 ilçe ve koordinatı. Dosyada kişiye ait bilgi yok: kayıtlar istasyon ve gün bazında toplulaştırılmış
 sayılar ile istasyon konumlarından oluşuyor. Ad, kimlik, adres gibi bir alan bulunmuyor.
+
+**Yedek özet tablo.** Not defterini Colab'da ilk denediğimde İBB sunucusuna bağlanılamadı (bu makineden
+aynı adres bir saniyede açılıyor). Hoca da defteri Colab'dan çalıştıracağı için tek bir sunucuya bağımlı
+kalmamak istedim. `istasyon_ozet.csv`, İBB dosyasındaki altı sütunu (`station_name`, `town`, `line`,
+`station_number`, `longitude`, `latitude`) ve her değer kombinasyonunun kaç satırda geçtiğini (`satir_sayisi`)
+içeriyor. Yolcu sayıları ve tarihler yok, bu yüzden kişiye ait bilgi de yok. Not defteri bu tabloyu çoğaltıp
+ham tabloyu geri kuruyor ve sonuçların aynı çıktığını iki yolla doğruladım: tablonun geri kurulmuş hâli ham
+dosyayla her satır için birebir aynı, iki çalıştırmanın çıktı dosyaları da bayt bayt aynı. İBB Açık Veri
+Lisansı kopyalamaya ve uyarlamaya kaynak gösterilerek izin verdiği için bu özeti depoya koydum (5. bölüm).
 
 ### Veride fark ettiğim sorunlar
 
@@ -129,6 +141,7 @@ OpenStreetMap kaynaklı olduğu için birkaç on metre sapabilir.
 | `islenmis/ilce_erisim.csv` | İlçe, yaka, nüfus, istasyon sayısı ve 100.000 kişiye düşen istasyon sayısı |
 | `islenmis/istasyon_listesi.csv` | Analize giren 322 istasyonun her biri: ilçesi, İBB'nin yazdığı ilçe, ilçe kararının dayanağı, sınıra uzaklık, kodları ve hatları |
 | `islenmis/duyarlilik_analizi.csv` | Verdiğim kararları değiştirince sonucun nasıl değiştiği (7 senaryo) |
+| `istasyon_ozet.csv` | İBB dosyasındaki altı sütunun satır sayılarıyla özeti. İBB dosyası okunduğunda defter bunu yeniden üretiyor |
 
 ## 5. Kaynak gösterimi, lisans ve paylaşım özeti
 
@@ -160,7 +173,8 @@ Sonuçların sorumluluğu bana aittir ve bu kurumların görüşünü yansıtmaz
 
 | Dosya | Depoda mı? | Neden |
 |---|---|---|
-| `ham/istasyon_verisi.csv` | Hayır | Boyutu 14 MB. Yukarıdaki bağlantıdan kaynağından indirilebilir |
+| `ham/istasyon_verisi.csv` | Hayır | Boyutu 14 MB. Yukarıdaki bağlantıdan kaynağından indirilebilir. Yerine özeti depoda |
+| `istasyon_ozet.csv` | Evet | İBB dosyasının altı sütununun özeti (33 KB), kaynak gösterilerek. İBB sunucusuna ulaşılamazsa kullanılıyor |
 | `ham/tuik_ilce_nufus.csv` | Hayır | TÜİK dosyasının tamamı yeniden yayımlanmıyor |
 | `ham/ilce_sinirlari.geojson` | Hayır | Boyutu 16 MB ve başkasının verisi. Not defteri kaynağından indiriyor |
 | `ilce_nufus.csv` | Evet | TÜİK'ten alınan 39 ilçenin toplam nüfus değeri, kaynak gösterilerek |

@@ -3,7 +3,7 @@
 flowchart TB
     BAS((Başla)) --> A["Üç veri dosyasını indir:<br/>İBB, TÜİK, ilçe sınırları"]
     A --> B{"İndirme<br/>başarılı mı?"}
-    B -- Hayır --> B1["Dosyayı elle yükle"]
+    B -- Hayır --> B1["İBB için yedek özet tabloyu kullan,<br/>o da olmazsa dosyayı elle yükle"]
     B -- Evet --> C
     B1 --> C["Oku, boş adlara hat adı ver,<br/>istasyon adını normalleştir"]
     C --> D["Her kodun koordinatını çöz,<br/>bozuk yazımları ele"]

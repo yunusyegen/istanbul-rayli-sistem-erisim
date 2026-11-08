@@ -188,7 +188,9 @@ Yöntem, literatür taraması ilerledikçe değişebilir.
 
 Dosyaların nereden indirildiği, hangi sütunların kullanıldığı ve verideki sorunlar
 [`veri/README.md`](veri/README.md) dosyasında yazıyor. Ham veri dosyaları büyük olduğu için depoya
-yüklenmedi; not defteri bunları kaynağından kendisi indiriyor.
+yüklenmedi; not defteri bunları kaynağından kendisi indiriyor. İBB sunucusuna ulaşılamazsa kullanılmak üzere, İBB
+dosyasının kullandığım altı sütununun satır sayılarıyla özetlenmiş hâli depoda duruyor
+([`veri/istasyon_ozet.csv`](veri/istasyon_ozet.csv), 33 KB).
 
 ## 11. Etik
 
@@ -204,7 +206,9 @@ yapılmıyor, bu yüzden katılımcı onamı ve etik kurul izni gerektiren bir d
   yılı ve lisansı yukarıdaki tabloda ve [`veri/README.md`](veri/README.md) dosyasında yazıyor. Bu
   çalışma İBB, TÜİK, OpenStreetMap ya da geoBoundaries tarafından onaylanmamıştır.
 - **Veri izinsiz yeniden yayımlanmıyor.** Ham dosyalar ve ilçe sınırları depoya yüklenmedi; yerine indirme
-  bağlantısı verildi (bkz. [`veri/README.md`](veri/README.md)).
+  bağlantısı verildi (bkz. [`veri/README.md`](veri/README.md)). Depoda yalnızca İBB dosyasının altı
+  sütununun özeti (kopyalamaya ve uyarlamaya kaynak gösterilerek izin veren İBB Açık Veri Lisansı
+  kapsamında, 33 KB) ve TÜİK'ten alınan 39 nüfus değeri var.
 - **Depoda kişisel bilgi tutulmuyor.** Öğrenci numarası, telefon ve e-posta gibi bilgiler depoya
   konmuyor.
 - **Gizli bilgi yok.** Depoda ve Colab not defterinde şifre, API anahtarı ya da erişim anahtarı
@@ -415,8 +419,7 @@ nüfus değil, ilçenin kent merkezine ve istihdam alanlarına göre konumu olab
 **Google Colab'da (önerilen):** Üstteki *Colab'da aç* düğmesine ya da [şu bağlantıya](https://colab.research.google.com/github/yunusyegen/istanbul-rayli-sistem-erisim/blob/main/analiz/analiz.ipynb) tıklayın,
 sonra *Çalışma zamanı → Tümünü çalıştır* deyin. Defter üç veri dosyasını kaynağından kendisi indiriyor
 (yaklaşık yarım dakika) ve sonuçları tek bir `sonuclar.zip` dosyası olarak indirtiyor. Hiçbir hesaba
-giriş yapılmıyor, Drive'a bağlanılmıyor. Bir indirme başarısız olursa yalnızca o dosyayı elle seçmeniz
-isteniyor.
+giriş yapılmıyor, Drive'a bağlanılmıyor. İBB sunucusuna ulaşılamazsa (Colab'daki ilk denememde bağlanılamadı) defter depodaki yedek özet tabloyu (`veri/istasyon_ozet.csv`) kullanıyor ve sonuçlar aynı çıkıyor. Başka bir indirme başarısız olursa yalnızca o dosyayı elle seçmeniz isteniyor.
 
 **Kendi bilgisayarınızda:** Depoyu klonlayın, `pip install pandas numpy scipy matplotlib shapely jupyter`
 ile kütüphaneleri kurun ve `analiz/analiz.ipynb` dosyasını Jupyter'de çalıştırın. Veri dosyaları yoksa
@@ -434,6 +437,7 @@ istanbul-rayli-sistem-erisim/
 ├── veri/
 │   ├── README.md           veri kaynakları, lisanslar ve indirme bağlantıları
 │   ├── ilce_nufus.csv      39 ilçenin yakası ve TÜİK nüfusu
+│   ├── istasyon_ozet.csv   İBB verisinin altı sütununun özeti (yedek)
 │   ├── ham/                indirilen ham dosyalar (depoya yüklenmiyor)
 │   └── islenmis/           ilce_erisim.csv, istasyon_listesi.csv, duyarlilik_analizi.csv
 ├── analiz/
@@ -477,7 +481,7 @@ Bu çıktı tamamlandı (bkz. 13. İlk bulgular).
 | 3 | Veri kaynakları belirlendi, İBB ve TÜİK dosyaları indirildi |
 | 4 | GitHub deposu kuruldu, README yazıldı, veri temizlendi ve ilk analiz yapıldı, 15 Issue ile Kanban panosu hazırlandı, 6 kaynak okunup literatür tablosu dolduruldu, Gini katsayısı ve duyarlılık analizi eklendi |
 | 5 | Use Case, Activity ve Class diyagramları hazırlandı ve depoya eklendi |
-| 6 | Not defteri Colab'da tek tıkla çalışacak şekilde yeniden düzenlendi (veriyi kaynağından kendisi indiriyor). İstasyonların ilçesi koordinatla doğrulandı ve 13 belirsiz istasyon sorunu çözüldü (#6). Toplam/ortalama tablosu ve yorum eklendi. Veri güvenliği ve lisans kontrolü yapıldı |
+| 6 | Not defteri Colab'da tek tıkla çalışacak şekilde yeniden düzenlendi (veriyi kaynağından kendisi indiriyor). İstasyonların ilçesi koordinatla doğrulandı ve 13 belirsiz istasyon sorunu çözüldü (#6). Toplam/ortalama tablosu ve yorum eklendi. Veri güvenliği ve lisans kontrolü yapıldı. Defteri gerçek Colab'da denediğimde İBB sunucusuna bağlanılamadığını gördüm, bu yüzden yedek özet tablo eklendi |
 
 ## 19. Proje yönetimi
 
