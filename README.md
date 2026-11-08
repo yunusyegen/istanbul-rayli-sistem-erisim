@@ -186,6 +186,11 @@ Yöntem, literatür taraması ilerledikçe değişebilir.
 | İlçe nüfusları (2025) | TÜİK, Adrese Dayalı Nüfus Kayıt Sistemi, [TÜİK Veri Portalı](https://veriportali.tuik.gov.tr) | Kaynak gösterilerek yeniden kullanılabilir, bkz. [TÜİK yasal uyarı](https://www.tuik.gov.tr/Kurumsal/Yasal_Uyari) |
 | İlçe sınırları (istasyonların ilçesini doğrulamak için) | [geoBoundaries](https://www.geoboundaries.org/), kaynak veri OpenStreetMap | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/), © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) |
 
+**Veri gerçek mi, tahmini mi?** Kullandığım üç veri de gerçek kayıttır, örnek ya da uydurma değer yok. İstasyonlar İBB'nin
+kaydından, nüfuslar TÜİK'in adrese dayalı kayıt sisteminden geliyor (anket tahmini değil). İlçe sınırları OpenStreetMap
+kaynaklı olduğu için resmî değil, yaklaşık sınırlardır. 100.000 kişiye düşen istasyon sayısı, Gini katsayısı ve p değerleri bu
+verilerden benim hesapladığım değerlerdir. Birimler: nüfus kişi, istasyon sayısı adet (değişken tablosunda da yazıyor).
+
 Dosyaların nereden indirildiği, hangi sütunların kullanıldığı ve verideki sorunlar
 [`veri/README.md`](veri/README.md) dosyasında yazıyor. Ham veri dosyaları büyük olduğu için depoya
 yüklenmedi; not defteri bunları kaynağından kendisi indiriyor. İBB sunucusuna ulaşılamazsa kullanılmak üzere, İBB
